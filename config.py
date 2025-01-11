@@ -1,0 +1,3 @@
+TELEGRAM_TOKEN = '7252788699:AAFjymiBcna1CZXYnpeB2EtVCJmeaXlxYUY'
+CHAT_IDS = ['1813173704']
+WEBSOCKET_URI = 'wss://pumpportal.fun/api/data'

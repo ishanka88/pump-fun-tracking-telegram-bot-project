@@ -1,1 +1,0 @@
-# Pumpfun Telegram Bot Project
