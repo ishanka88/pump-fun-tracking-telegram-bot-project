@@ -475,9 +475,9 @@ def send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_c
     
 
     if total_tokens_count == default_Multiplicity_value:
-        topic = f"[😍]({new_image_url if new_image_url else f'https://pump.fun/coin/{g_contract_address}'}) *New Trending Token Found* 😍"
+        topic ="New Trending Token Found" # f"[😍]({new_image_url if new_image_url else f'https://pump.fun/coin/{g_contract_address}'}) *New Trending Token Found* 😍"
     else:
-        topic = f"[🔥]({new_image_url if new_image_url else f"https://pump.fun/coin/{g_contract_address}"}) *New Update* 🔥"
+        topic = "New Trending Token Found" #f"[🔥]({new_image_url if new_image_url else f"https://pump.fun/coin/{g_contract_address}"}) *New Update* 🔥"
 
     main_message = f"""
 

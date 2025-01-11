@@ -20,23 +20,34 @@
         2. sudo yum install python3-pip -y
         3. pip3 --version
         4. sudo yum install git -y  # For Amazon Linux or RHEL-based EC2 instances
-        5. ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-        6. Add the SSH key to GitHub:
-                Copy the public key to your clipboard:
-                cat ~/.ssh/id_rsa.pub
-        7. cd /home/ec2-user/telgram-bot-project  # Replace with your desired directory
-        8. git clone https://github.com/yourusername/yourrepository.git
-        9. git clone git@github.com:yourusername/yourrepository.git
+        5. ssh-keygen -t rsa -b 4096 -C "your_email@example.com" 
+        6. press enter twise
+        7. eval "$(ssh-agent -s)" # Start the SSH agent:
+        8. ssh-add ~/.ssh/id_rsa  # Add the SSH private key to the agent:
+        9. cat ~/.ssh/id_rsa.pub  # Copy the Public Key 
+                Ex-  ssh-rsa AAAAB3NzaC.......etc
 
+       10. Step 4: Add SSH Key to GitHub
+                Log in to GitHub and go to your SSH and GPG keys settings:
 
+                Go to GitHub SSH Keys Settings.
+                Click on New SSH Key.
+                Paste the public key you copied earlier into the "Key" field.
 
+                Give the key a title (e.g., "EC2 SSH Key") and click Add SSH Key.
 
+      11. ssh -T git@github.com
+      12. type "yes" and press enter
 
+      13. mkdir MyApps
+      14. cd /home/ec2-user/MyApps   # Replace with your desired directory
+      15. git clone git@github.com:ishanka88/pump-fun-tracking-telegram-bot-project
+      16. cd pump-fun-tracking-telegram-bot-project
+      17. git status
 
 -- APP RUN --
 
         1. pip install -r requirements.txt
         2. python3 run.py
-
 
 
