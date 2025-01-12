@@ -3,6 +3,11 @@ ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
 
 git status
 git add .
+git log
 git commit -m "Your commit message"
 git pull origin main
 git push origin main
+
+
+--- Undo local changes to a file (revert it to the last committed state):
+    git checkout -- <file-name>
