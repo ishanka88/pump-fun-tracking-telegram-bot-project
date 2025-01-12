@@ -395,8 +395,6 @@ async def add_token_data_into_database(token_name, token_symbol, contract_addres
                 logging.warning(f"Failed to add token {token_name} to the database.")
 
             if twitter_link != "no":
-                
-                print("yes")
                 asyncio.create_task(send_telegram_message_if_same_twitter_connected(twitter_link,token_symbol,token_name,contract_address))
 
 
@@ -409,12 +407,9 @@ async def send_telegram_message_if_same_twitter_connected(twitter_link,token_sym
     try:
         async with semaphore:
             tokens_list=MemeCoins.get_tokens_by_twitter_link(twitter_link)
-            print(tokens_list)
             total_tokens_count=len(tokens_list)
             if total_tokens_count > 0 :
                 unique_tokens_list=get_unique_tokens(tokens_list)
-
-                print(len(unique_tokens_list))
                 send_telegram_message_if_found_a_trending_token(unique_tokens_list,total_tokens_count,token_symbol,token_name,contract_address,group2_id)
                 
     except Exception as e:
@@ -574,8 +569,6 @@ def get_unique_tokens(tokens_list):
     
 def send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_count,token_symbol,token_name,contract_address,groupId):
     global default_Multiplicity_value 
-
-    print (groupId)
     
     new_image_url = f"https://pump.fun/coin/{contract_address}"
     genuine_or_not = "❌"
