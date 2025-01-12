@@ -57,3 +57,873 @@ IndexError: list index out of range
 2025-01-12 15:26:24,869 - INFO - Subscribing to new token creation events...
 2025-01-12 15:30:01,476 - INFO - Application is stopping. This might take a moment.
 2025-01-12 15:30:01,477 - INFO - Application.stop() complete
+2025-01-12 16:14:35,430 - INFO - Starting bot...
+2025-01-12 16:14:36,533 - INFO - Application started
+2025-01-12 16:15:25,993 - INFO - Subscribing to new token creation events...
+2025-01-12 16:15:27,653 - INFO - Successfully added token PARK CHANYEOL to the database.
+2025-01-12 16:15:27,992 - ERROR - Error adding token data to database: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-12 16:15:33,673 - ERROR - Error adding token data to database: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-12 16:15:34,020 - INFO - Successfully added token Green MAn to the database.
+2025-01-12 16:15:35,364 - INFO - Successfully added token PIMPLE to the database.
+2025-01-12 16:15:37,605 - ERROR - Error adding token data to database: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-12 16:15:41,876 - INFO - Successfully added token New Baby Lion to the database.
+2025-01-12 16:15:46,567 - ERROR - Error adding token data to database: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-12 16:15:47,364 - INFO - Successfully added token Solana Wif Hat to the database.
+2025-01-12 16:15:48,697 - ERROR - Error adding token data to database: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-12 16:15:48,954 - ERROR - Error adding token data to database: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-12 16:15:48,955 - INFO - Application is stopping. This might take a moment.
+2025-01-12 16:15:48,955 - INFO - Application.stop() complete
+2025-01-12 16:23:02,235 - INFO - Starting bot...
+2025-01-12 16:23:03,674 - INFO - Application started
+2025-01-12 16:23:15,065 - INFO - Subscribing to new token creation events...
+2025-01-12 16:23:16,383 - INFO - Successfully added token GloryBOX to the database.
+2025-01-12 16:23:17,394 - INFO - Successfully added token Foliel to the database.
+2025-01-12 16:23:20,471 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:23:20,772 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:23:23,594 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:23:26,805 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:23:30,394 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:23:30,772 - ERROR - Error adding token data to database: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-12 16:23:31,150 - INFO - Successfully added token LyraverseAI to the database.
+2025-01-12 16:23:44,095 - INFO - Successfully added token Frank the Sawfish to the database.
+2025-01-12 16:23:45,728 - INFO - Successfully added token Nice Fucking Ass to the database.
+2025-01-12 16:23:47,112 - ERROR - Error adding token data to database: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-12 16:23:48,261 - INFO - Successfully added token Ares AI to the database.
+2025-01-12 16:23:51,839 - ERROR - Error adding token data to database: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-12 16:23:57,629 - INFO - Successfully added token Aria Dog to the database.
+2025-01-12 16:23:58,484 - INFO - Successfully added token Baby Apetronaut to the database.
+2025-01-12 16:23:59,295 - INFO - Successfully added token Kiyutsu AI to the database.
+2025-01-12 16:24:06,484 - INFO - Successfully added token Fast to the database.
+2025-01-12 16:24:15,162 - INFO - Successfully added token 2019 OG WIF to the database.
+2025-01-12 16:24:16,045 - ERROR - Error adding token data to database: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-12 16:24:21,973 - INFO - Successfully added token Flame to the database.
+2025-01-12 16:24:24,970 - INFO - Application is stopping. This might take a moment.
+2025-01-12 16:24:24,971 - INFO - Application.stop() complete
+2025-01-12 16:26:25,993 - INFO - Starting bot...
+2025-01-12 16:26:27,133 - INFO - Application started
+2025-01-12 16:26:34,357 - INFO - Subscribing to new token creation events...
+2025-01-12 16:26:36,413 - INFO - Successfully added token SupplyVest to the database.
+2025-01-12 16:26:37,023 - INFO - Successfully added token Dog Wif Vodka to the database.
+2025-01-12 16:26:37,924 - INFO - Successfully added token snAIke to the database.
+2025-01-12 16:26:38,502 - INFO - Successfully added token Just an American WIF Guy to the database.
+2025-01-12 16:26:43,302 - INFO - Successfully added token my first casino to the database.
+2025-01-12 16:26:49,502 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:26:52,880 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:26:56,117 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:26:56,491 - INFO - Successfully added token locked in fented car to the database.
+2025-01-12 16:26:59,414 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:27:02,024 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:27:02,402 - INFO - Successfully added token Creating Shareholder Value to the database.
+2025-01-12 16:27:02,836 - INFO - Successfully added token Hat Wif Hat to the database.
+2025-01-12 16:27:03,224 - INFO - Successfully added token SHIBA INU TOWEL to the database.
+2025-01-12 16:27:03,580 - INFO - Successfully added token cat wif b(hat) to the database.
+2025-01-12 16:27:03,980 - INFO - Successfully added token Leon the sea lion to the database.
+2025-01-12 16:27:08,279 - INFO - Successfully added token Kihomi AI to the database.
+2025-01-12 16:27:12,354 - INFO - Successfully added token Dino Wif Hat to the database.
+2025-01-12 16:27:24,465 - INFO - Successfully added token Muslims to the database.
+2025-01-12 16:27:27,137 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:27:27,782 - INFO - Successfully added token Liminaral to the database.
+2025-01-12 16:27:31,782 - INFO - Successfully added token CHILLGUY WIF HAT to the database.
+2025-01-12 16:27:32,177 - INFO - Successfully added token Dog wif Frog Hat to the database.
+2025-01-12 16:27:34,154 - INFO - Successfully added token Octopus Network to the database.
+2025-01-12 16:27:37,155 - INFO - Successfully added token shrek to the database.
+2025-01-12 16:27:39,849 - INFO - Successfully added token MAVERICK AI to the database.
+2025-01-12 16:27:40,193 - INFO - Successfully added token edurubio to the database.
+2025-01-12 16:27:43,371 - INFO - Successfully added token NIMBLE Networks AI Infrastructur to the database.
+2025-01-12 16:27:43,877 - INFO - Successfully added token Cobra+Cat  to the database.
+2025-01-12 16:27:44,866 - INFO - Successfully added token Your World  AI to the database.
+2025-01-12 16:27:49,488 - INFO - Successfully added token Kobe  to the database.
+2025-01-12 16:27:51,183 - INFO - Successfully added token WTAD to the database.
+2025-01-12 16:27:52,758 - INFO - Successfully added token SHAMAN coin to the database.
+2025-01-12 16:28:02,411 - INFO - Successfully added token snAIke to the database.
+2025-01-12 16:28:04,250 - INFO - Successfully added token EvZK to the database.
+2025-01-12 16:28:05,672 - INFO - Successfully added token Trump  to the database.
+2025-01-12 16:28:16,002 - INFO - Successfully added token Hoyumi AI to the database.
+2025-01-12 16:28:21,705 - INFO - Successfully added token riley schoch graduating to the database.
+2025-01-12 16:28:23,483 - INFO - Successfully added token Sberex to the database.
+2025-01-12 16:28:24,427 - INFO - Successfully added token DUDU to the database.
+2025-01-12 16:28:29,094 - INFO - Successfully added token dog wif c(hat) to the database.
+2025-01-12 16:28:31,583 - INFO - Successfully added token MeteoraAG's Mascot to the database.
+2025-01-12 16:28:31,905 - INFO - Successfully added token Fridon AI to the database.
+2025-01-12 16:28:33,939 - INFO - Successfully added token SNOWBUNNY to the database.
+2025-01-12 16:28:36,628 - INFO - Successfully added token Make Europe great again to the database.
+2025-01-12 16:28:39,784 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:28:42,606 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:28:45,139 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:28:47,697 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:28:50,073 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:28:50,395 - INFO - Successfully added token CatFrog to the database.
+2025-01-12 16:28:51,584 - INFO - Successfully added token first tokenized ETH name service to the database.
+2025-01-12 16:28:51,951 - INFO - Successfully added token Astral AI to the database.
+2025-01-12 16:28:52,251 - INFO - Successfully added token PEEHOLE to the database.
+2025-01-12 16:28:52,584 - INFO - Successfully added token rynel to the database.
+2025-01-12 16:28:52,895 - INFO - Successfully added token Cat wif Unicorn to the database.
+2025-01-12 16:28:55,479 - INFO - Successfully added token Fast to the database.
+2025-01-12 16:28:57,584 - INFO - Successfully added token Defend Decentralization to the database.
+2025-01-12 16:28:59,495 - INFO - Successfully added token Hosemo AI to the database.
+2025-01-12 16:29:00,784 - INFO - Successfully added token Dog wif f(hat) to the database.
+2025-01-12 16:29:06,584 - INFO - Successfully added token ELON PUP to the database.
+2025-01-12 16:29:10,073 - INFO - Successfully added token 1st Tokenized Solana Stock to the database.
+2025-01-12 16:29:14,873 - INFO - Successfully added token Pussy Needs Liquidity to the database.
+2025-01-12 16:29:15,284 - INFO - Successfully added token UseUniversalX to the database.
+2025-01-12 16:29:15,964 - INFO - Successfully added token Dexter the chow to the database.
+2025-01-12 16:29:18,307 - INFO - Successfully added token dog wif beer to the database.
+2025-01-12 16:29:28,518 - INFO - Successfully added token dog wif b(hat) to the database.
+2025-01-12 16:29:38,274 - INFO - Successfully added token Fridon AI to the database.
+2025-01-12 16:29:38,763 - INFO - Successfully added token BRIK® Socket to the database.
+2025-01-12 16:29:42,553 - INFO - Successfully added token CMD to the database.
+2025-01-12 16:29:45,530 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:29:48,186 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:29:50,708 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:29:53,475 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:29:53,842 - INFO - Successfully added token Ineffable Gnostic Sex to the database.
+2025-01-12 16:29:55,041 - INFO - Successfully added token COOLCAT to the database.
+2025-01-12 16:30:00,623 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:30:01,167 - INFO - Successfully added token Shaking My Head the Whole Time to the database.
+2025-01-12 16:30:05,801 - INFO - Successfully added token Crypto Support to the database.
+2025-01-12 16:30:07,567 - INFO - Successfully added token Live24_Fun to the database.
+2025-01-12 16:30:11,767 - INFO - Successfully added token GISNTIL to the database.
+2025-01-12 16:30:17,379 - INFO - Successfully added token Fridon AI to the database.
+2025-01-12 16:30:17,823 - INFO - Successfully added token dog wif diploma to the database.
+2025-01-12 16:30:18,201 - INFO - Successfully added token dog wif frog(hat) to the database.
+2025-01-12 16:30:18,568 - INFO - Successfully added token Nice Fucking Titties to the database.
+2025-01-12 16:30:22,268 - INFO - Successfully added token Kamiyu AI to the database.
+2025-01-12 16:30:27,857 - INFO - Successfully added token Trump Wif Hat  to the database.
+2025-01-12 16:30:30,468 - INFO - Successfully added token Dogeking AI to the database.
+2025-01-12 16:30:32,613 - INFO - Successfully added token Stop Buying AI Coins  to the database.
+2025-01-12 16:30:32,991 - INFO - Successfully added token UIIAI UIIAI to the database.
+2025-01-12 16:30:33,746 - INFO - Successfully added token Only HAT to the database.
+2025-01-12 16:30:37,391 - INFO - Successfully added token Ares AI to the database.
+2025-01-12 16:30:39,991 - INFO - Successfully added token Pump DUDU to the database.
+2025-01-12 16:30:40,336 - INFO - Successfully added token Nacho Cat 🌮😹 to the database.
+2025-01-12 16:30:43,235 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:30:46,276 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:30:49,116 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:30:51,838 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:30:52,817 - INFO - Token update - {count}
+2025-01-12 16:30:53,205 - INFO - Successfully added token The Shocked Cat to the database.
+2025-01-12 16:30:56,138 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:30:56,460 - INFO - Successfully added token Do the math to the database.
+2025-01-12 16:30:57,005 - INFO - Successfully added token HP Lovecraft's Cat's Name to the database.
+2025-01-12 16:30:57,360 - INFO - Successfully added token AI prototype to the database.
+2025-01-12 16:30:57,738 - INFO - Successfully added token AIVIN to the database.
+2025-01-12 16:31:03,224 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:31:03,605 - INFO - Successfully added token Nouns Esports to the database.
+2025-01-12 16:31:05,091 - INFO - Successfully added token Kisana AI to the database.
+2025-01-12 16:31:08,080 - INFO - Successfully added token SupplyVest to the database.
+2025-01-12 16:31:09,146 - INFO - Successfully added token JINGWEI ART to the database.
+2025-01-12 16:31:09,558 - INFO - Successfully added token snake wif hat to the database.
+2025-01-12 16:31:20,947 - INFO - Successfully added token Your World  AI to the database.
+2025-01-12 16:31:23,728 - INFO - Successfully added token Nice Fucking Ass to the database.
+2025-01-12 16:31:26,437 - INFO - Failed to retrieve metadata. Status code: 403
+2025-01-12 16:31:26,525 - INFO - Successfully added token APOLLO2025 to the database.
+2025-01-12 16:31:29,214 - INFO - Successfully added token Love Brunettes to the database.
+2025-01-12 16:31:29,613 - INFO - Successfully added token Vora Terminal AI to the database.
+2025-01-12 16:31:30,012 - INFO - Successfully added token Messy with Dog Hat to the database.
+2025-01-12 16:31:33,691 - INFO - Successfully added token Chunk RETURNS to the database.
+2025-01-12 16:31:37,735 - INFO - Successfully added token girlfriend to the database.
+2025-01-12 16:31:38,301 - INFO - Successfully added token Truth_terminals Trash Oracle to the database.
+2025-01-12 16:31:41,713 - INFO - Successfully added token HAT to the database.
+2025-01-12 16:31:45,946 - INFO - Successfully added token girlfriend to the database.
+2025-01-12 16:31:47,257 - INFO - Successfully added token Kichitsu AI to the database.
+2025-01-12 16:31:50,991 - INFO - Successfully added token Gary Gensler's Gone to the database.
+2025-01-12 16:31:54,836 - INFO - Successfully added token Toly´s Cat Rug to the database.
+2025-01-12 16:31:55,328 - INFO - Successfully added token Justice for Waylon to the database.
+2025-01-12 16:32:02,447 - INFO - Successfully added token Latecoin to the database.
+2025-01-12 16:32:12,070 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:32:12,603 - INFO - Successfully added token ChillBatman to the database.
+2025-01-12 16:32:22,583 - INFO - Successfully added token Fast to the database.
+2025-01-12 16:32:22,983 - INFO - Successfully added token Akatsuki Pepe to the database.
+2025-01-12 16:32:29,604 - INFO - Successfully added token Nexus Ai  to the database.
+2025-01-12 16:32:30,839 - INFO - Successfully added token Doge Wif Knife to the database.
+2025-01-12 16:32:35,859 - INFO - Successfully added token SupplyVest to the database.
+2025-01-12 16:32:36,263 - INFO - Successfully added token kily to the database.
+2025-01-12 16:32:37,890 - INFO - Successfully added token Milky Way  to the database.
+2025-01-12 16:32:43,335 - INFO - Successfully added token Kiyutsu AI to the database.
+2025-01-12 16:32:43,668 - INFO - Successfully added token sandwich wif dog to the database.
+2025-01-12 16:32:49,335 - INFO - Successfully added token Torus Network AI to the database.
+2025-01-12 16:32:51,491 - INFO - Successfully added token Hello World! to the database.
+2025-01-12 16:32:57,980 - INFO - Successfully added token UHGF to the database.
+2025-01-12 16:32:58,391 - INFO - Successfully added token Sphere to the database.
+2025-01-12 16:32:58,847 - INFO - Successfully added token Peepzilla to the database.
+2025-01-12 16:33:10,925 - INFO - Successfully added token Snake wif hat to the database.
+2025-01-12 16:33:14,992 - INFO - Successfully added token Nexus Ai to the database.
+2025-01-12 16:33:17,014 - INFO - Successfully added token MWOAH AI to the database.
+2025-01-12 16:33:20,270 - INFO - Successfully added token HUSBAND to the database.
+2025-01-12 16:33:21,814 - INFO - Successfully added token NIGGA CAT to the database.
+2025-01-12 16:33:23,936 - INFO - Successfully added token Megapunks to the database.
+2025-01-12 16:33:25,697 - INFO - Successfully added token Vertical AI to the database.
+2025-01-12 16:33:26,263 - INFO - Successfully added token Koyusa AI to the database.
+2025-01-12 16:33:27,214 - INFO - Successfully added token MGHM to the database.
+2025-01-12 16:33:27,881 - INFO - Successfully added token ethereum under dog to the database.
+2025-01-12 16:33:28,237 - INFO - Successfully added token gfe to the database.
+2025-01-12 16:33:32,552 - INFO - Successfully added token Side Bitch to the database.
+2025-01-12 16:33:39,928 - INFO - Successfully added token BALOO Bot to the database.
+2025-01-12 16:33:41,105 - INFO - Successfully added token Siski to the database.
+2025-01-12 16:33:45,661 - INFO - Successfully added token BULDOG COIN to the database.
+2025-01-12 16:33:50,334 - INFO - Application is stopping. This might take a moment.
+2025-01-12 16:33:50,334 - INFO - Application.stop() complete
+2025-01-12 16:35:21,198 - INFO - Starting bot...
+2025-01-12 16:35:22,131 - INFO - Application started
+2025-01-12 16:36:02,064 - INFO - Subscribing to new token creation events...
+2025-01-12 16:36:04,901 - INFO - Successfully added token PRISM AI to the database.
+2025-01-12 16:36:07,426 - INFO - Successfully added token unc to the database.
+2025-01-12 16:36:10,215 - INFO - Successfully added token Fridon AI to the database.
+2025-01-12 16:36:13,379 - INFO - Successfully added token Your World  AI to the database.
+2025-01-12 16:36:16,379 - INFO - Successfully added token how much cat  to the database.
+2025-01-12 16:36:18,968 - INFO - Successfully added token Venom Agent to the database.
+2025-01-12 16:36:21,735 - INFO - Successfully added token nice cook to the database.
+2025-01-12 16:36:24,568 - INFO - Successfully added token MOON to the database.
+2025-01-12 16:36:27,235 - INFO - Successfully added token waifu to the database.
+2025-01-12 16:36:29,979 - INFO - Successfully added token Hosato AI to the database.
+2025-01-12 16:36:32,568 - INFO - Successfully added token luu wif hat to the database.
+2025-01-12 16:36:35,658 - INFO - Successfully added token Nexus Ai  to the database.
+2025-01-12 16:36:40,924 - INFO - Successfully added token capybara wif capybara to the database.
+2025-01-12 16:36:43,658 - INFO - Successfully added token Most important event in history to the database.
+2025-01-12 16:36:46,269 - INFO - Successfully added token dog wif hat wif cat wif hat to the database.
+2025-01-12 16:36:48,836 - INFO - Successfully added token Instant AIPrompt  to the database.
+2025-01-12 16:36:51,301 - INFO - Successfully added token daugther to the database.
+2025-01-12 16:36:53,897 - INFO - Successfully added token cat wif dog to the database.
+2025-01-12 16:36:56,542 - INFO - Successfully added token Decentralised Nigga Coin to the database.
+2025-01-12 17:05:13,042 - INFO - Starting bot...
+2025-01-12 17:05:14,134 - INFO - Application started
+2025-01-12 17:06:25,578 - INFO - Subscribing to new token creation events...
+2025-01-12 17:06:27,221 - ERROR - An error occurred: Invalid URL 'QmTRLroZ2bgQYxkkg1HYXxW7JDtrwTKUkY3WBdYgyH3jYq': No scheme supplied. Perhaps you meant http://QmTRLroZ2bgQYxkkg1HYXxW7JDtrwTKUkY3WBdYgyH3jYq?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 431, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmTRLroZ2bgQYxkkg1HYXxW7JDtrwTKUkY3WBdYgyH3jYq': No scheme supplied. Perhaps you meant http://QmTRLroZ2bgQYxkkg1HYXxW7JDtrwTKUkY3WBdYgyH3jYq?
+2025-01-12 17:06:27,223 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:06:28,261 - ERROR - An error occurred: Invalid URL 'QmeJYPuF9Yz96WSydFgUwUiDn7i4GtZEAxXNkhQyGq9XjB': No scheme supplied. Perhaps you meant http://QmeJYPuF9Yz96WSydFgUwUiDn7i4GtZEAxXNkhQyGq9XjB?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 431, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmeJYPuF9Yz96WSydFgUwUiDn7i4GtZEAxXNkhQyGq9XjB': No scheme supplied. Perhaps you meant http://QmeJYPuF9Yz96WSydFgUwUiDn7i4GtZEAxXNkhQyGq9XjB?
+2025-01-12 17:06:28,262 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:06:33,288 - ERROR - An error occurred: Invalid URL 'QmSP9CaENoVBVEHn6iC1z3JqP4faxPRtKXNGyC2YnURReq': No scheme supplied. Perhaps you meant http://QmSP9CaENoVBVEHn6iC1z3JqP4faxPRtKXNGyC2YnURReq?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 431, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmSP9CaENoVBVEHn6iC1z3JqP4faxPRtKXNGyC2YnURReq': No scheme supplied. Perhaps you meant http://QmSP9CaENoVBVEHn6iC1z3JqP4faxPRtKXNGyC2YnURReq?
+2025-01-12 17:06:33,289 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:06:33,291 - ERROR - An error occurred: Invalid URL 'Qmaz5LqYYgY6vq9xVg4TdLUrLSip7DKnYyk5YyMuPz6U5u': No scheme supplied. Perhaps you meant http://Qmaz5LqYYgY6vq9xVg4TdLUrLSip7DKnYyk5YyMuPz6U5u?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 431, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'Qmaz5LqYYgY6vq9xVg4TdLUrLSip7DKnYyk5YyMuPz6U5u': No scheme supplied. Perhaps you meant http://Qmaz5LqYYgY6vq9xVg4TdLUrLSip7DKnYyk5YyMuPz6U5u?
+2025-01-12 17:06:33,292 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:06:37,486 - ERROR - An error occurred: Invalid URL 'Qmcw1T2jMjCt9YTH2vHxkhASyB8SCW6bexrQ9q6kLSEP6A': No scheme supplied. Perhaps you meant http://Qmcw1T2jMjCt9YTH2vHxkhASyB8SCW6bexrQ9q6kLSEP6A?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 431, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'Qmcw1T2jMjCt9YTH2vHxkhASyB8SCW6bexrQ9q6kLSEP6A': No scheme supplied. Perhaps you meant http://Qmcw1T2jMjCt9YTH2vHxkhASyB8SCW6bexrQ9q6kLSEP6A?
+2025-01-12 17:06:37,487 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:06:41,684 - ERROR - An error occurred: Invalid URL 'QmYzHAYrbxZnDYngvFzeFczhRNf616PNeNzN3zV1xppUNC': No scheme supplied. Perhaps you meant http://QmYzHAYrbxZnDYngvFzeFczhRNf616PNeNzN3zV1xppUNC?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 431, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmYzHAYrbxZnDYngvFzeFczhRNf616PNeNzN3zV1xppUNC': No scheme supplied. Perhaps you meant http://QmYzHAYrbxZnDYngvFzeFczhRNf616PNeNzN3zV1xppUNC?
+2025-01-12 17:06:41,685 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:06:41,692 - ERROR - An error occurred: Invalid URL 'QmUbpvWpv8MqbZaE5i9d8G8PmRyjxTPJ57JUoqqRSEf7wQ': No scheme supplied. Perhaps you meant http://QmUbpvWpv8MqbZaE5i9d8G8PmRyjxTPJ57JUoqqRSEf7wQ?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 431, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmUbpvWpv8MqbZaE5i9d8G8PmRyjxTPJ57JUoqqRSEf7wQ': No scheme supplied. Perhaps you meant http://QmUbpvWpv8MqbZaE5i9d8G8PmRyjxTPJ57JUoqqRSEf7wQ?
+2025-01-12 17:06:41,692 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:06:46,087 - ERROR - An error occurred: Invalid URL 'QmfHXNpRA1NgbqNeWjAkWwQsLRtAgwu7MYFuhKPYRDwW9b': No scheme supplied. Perhaps you meant http://QmfHXNpRA1NgbqNeWjAkWwQsLRtAgwu7MYFuhKPYRDwW9b?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 431, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmfHXNpRA1NgbqNeWjAkWwQsLRtAgwu7MYFuhKPYRDwW9b': No scheme supplied. Perhaps you meant http://QmfHXNpRA1NgbqNeWjAkWwQsLRtAgwu7MYFuhKPYRDwW9b?
+2025-01-12 17:06:46,088 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:06:46,786 - ERROR - An error occurred: Invalid URL 'QmeYCiyQx2rzn1DbzHHMENyaF7zBQBE37KwHTbuQJPJeKc': No scheme supplied. Perhaps you meant http://QmeYCiyQx2rzn1DbzHHMENyaF7zBQBE37KwHTbuQJPJeKc?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 431, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmeYCiyQx2rzn1DbzHHMENyaF7zBQBE37KwHTbuQJPJeKc': No scheme supplied. Perhaps you meant http://QmeYCiyQx2rzn1DbzHHMENyaF7zBQBE37KwHTbuQJPJeKc?
+2025-01-12 17:06:46,787 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:08:51,662 - INFO - Starting bot...
+2025-01-12 17:08:52,860 - INFO - Application started
+2025-01-12 17:09:07,216 - INFO - Application is stopping. This might take a moment.
+2025-01-12 17:09:07,216 - INFO - Application.stop() complete
+2025-01-12 17:09:10,017 - INFO - Starting bot...
+2025-01-12 17:09:11,088 - INFO - Application started
+2025-01-12 17:09:24,501 - INFO - Subscribing to new token creation events...
+2025-01-12 17:09:27,061 - ERROR - An error occurred: Invalid URL 'QmSu763k2vWWSe9BtHwy7NgtCk5fRsmS8eSiLeZqknkNRG': No scheme supplied. Perhaps you meant http://QmSu763k2vWWSe9BtHwy7NgtCk5fRsmS8eSiLeZqknkNRG?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 432, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmSu763k2vWWSe9BtHwy7NgtCk5fRsmS8eSiLeZqknkNRG': No scheme supplied. Perhaps you meant http://QmSu763k2vWWSe9BtHwy7NgtCk5fRsmS8eSiLeZqknkNRG?
+2025-01-12 17:09:27,063 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:09:33,205 - ERROR - An error occurred: Invalid URL 'QmXoNR9agbtgsWoAUE7sCPznoXuSwxLdut43Hhr577kb2c': No scheme supplied. Perhaps you meant http://QmXoNR9agbtgsWoAUE7sCPznoXuSwxLdut43Hhr577kb2c?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 432, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmXoNR9agbtgsWoAUE7sCPznoXuSwxLdut43Hhr577kb2c': No scheme supplied. Perhaps you meant http://QmXoNR9agbtgsWoAUE7sCPznoXuSwxLdut43Hhr577kb2c?
+2025-01-12 17:09:33,206 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:09:49,180 - ERROR - An error occurred: Invalid URL 'QmZq5YDcwdi3Zwda3nhxNyAfgCTa6ngh2YprffatR4SGkF': No scheme supplied. Perhaps you meant http://QmZq5YDcwdi3Zwda3nhxNyAfgCTa6ngh2YprffatR4SGkF?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 432, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmZq5YDcwdi3Zwda3nhxNyAfgCTa6ngh2YprffatR4SGkF': No scheme supplied. Perhaps you meant http://QmZq5YDcwdi3Zwda3nhxNyAfgCTa6ngh2YprffatR4SGkF?
+2025-01-12 17:09:49,181 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:09:49,487 - ERROR - An error occurred: Invalid URL 'QmYKMQCZEkqtfwUdgf2KQaw9YeCnKYffA9BNv6YuTH1iPU': No scheme supplied. Perhaps you meant http://QmYKMQCZEkqtfwUdgf2KQaw9YeCnKYffA9BNv6YuTH1iPU?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 432, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmYKMQCZEkqtfwUdgf2KQaw9YeCnKYffA9BNv6YuTH1iPU': No scheme supplied. Perhaps you meant http://QmYKMQCZEkqtfwUdgf2KQaw9YeCnKYffA9BNv6YuTH1iPU?
+2025-01-12 17:09:49,488 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:09:52,047 - ERROR - An error occurred: Invalid URL 'QmXqvBtttkGhaFwq3Vi61omMqHLRacfvtjKaZ98arsPihW': No scheme supplied. Perhaps you meant http://QmXqvBtttkGhaFwq3Vi61omMqHLRacfvtjKaZ98arsPihW?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 432, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmXqvBtttkGhaFwq3Vi61omMqHLRacfvtjKaZ98arsPihW': No scheme supplied. Perhaps you meant http://QmXqvBtttkGhaFwq3Vi61omMqHLRacfvtjKaZ98arsPihW?
+2025-01-12 17:09:52,048 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:09:52,654 - INFO - Application is stopping. This might take a moment.
+2025-01-12 17:09:52,654 - INFO - Application.stop() complete
+2025-01-12 17:11:35,532 - INFO - Starting bot...
+2025-01-12 17:11:36,597 - INFO - Application started
+2025-01-12 17:11:48,677 - INFO - Starting bot...
+2025-01-12 17:11:49,631 - INFO - Application started
+2025-01-12 17:11:57,384 - INFO - Subscribing to new token creation events...
+2025-01-12 17:13:19,857 - ERROR - An error occurred: Invalid URL 'QmVWXdDkYWYGXnSneUnkH7d4gmUiawAEkz9YsnJmjJ39eY': No scheme supplied. Perhaps you meant http://QmVWXdDkYWYGXnSneUnkH7d4gmUiawAEkz9YsnJmjJ39eY?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 433, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmVWXdDkYWYGXnSneUnkH7d4gmUiawAEkz9YsnJmjJ39eY': No scheme supplied. Perhaps you meant http://QmVWXdDkYWYGXnSneUnkH7d4gmUiawAEkz9YsnJmjJ39eY?
+2025-01-12 17:13:19,859 - ERROR - An error occurred: Invalid URL 'QmUpeiqUyPG94zbaUQY9yaWzU2SpgHibLZF6z68bpPB5Ju': No scheme supplied. Perhaps you meant http://QmUpeiqUyPG94zbaUQY9yaWzU2SpgHibLZF6z68bpPB5Ju?
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 433, in get_ipfs_metadata
+    response = requests.get(ipfs_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'QmUpeiqUyPG94zbaUQY9yaWzU2SpgHibLZF6z68bpPB5Ju': No scheme supplied. Perhaps you meant http://QmUpeiqUyPG94zbaUQY9yaWzU2SpgHibLZF6z68bpPB5Ju?
+2025-01-12 17:13:38,455 - INFO - Failed to retrieve metadata. Status code: 403
+2025-01-12 17:13:38,456 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:14:19,646 - INFO - Application is stopping. This might take a moment.
+2025-01-12 17:14:19,646 - INFO - Application.stop() complete
+2025-01-12 17:22:24,657 - INFO - Starting bot...
+2025-01-12 17:22:25,858 - INFO - Application started
+2025-01-12 17:22:42,993 - INFO - Starting bot...
+2025-01-12 17:22:44,096 - INFO - Application started
+2025-01-12 17:23:29,654 - INFO - Starting bot...
+2025-01-12 17:23:30,793 - INFO - Application started
+2025-01-12 17:23:50,601 - INFO - Starting bot...
+2025-01-12 17:23:51,674 - INFO - Application started
+2025-01-12 17:24:13,769 - INFO - Subscribing to new token creation events...
+2025-01-12 17:24:29,115 - INFO - Failed to retrieve metadata. Status code: 403
+2025-01-12 17:24:29,117 - ERROR - Error adding token data to database: 'NoneType' object has no attribute 'get'
+2025-01-12 17:31:30,092 - INFO - Starting bot...
+2025-01-12 17:31:31,262 - INFO - Application started
+2025-01-12 17:32:32,625 - INFO - Subscribing to new token creation events...
+2025-01-12 17:36:00,894 - INFO - Failed to retrieve metadata. Status code: 403
+2025-01-12 17:37:15,643 - INFO - Failed to retrieve metadata. Status code: 403
+2025-01-12 17:38:51,903 - INFO - Token update - {count}
+2025-01-12 17:41:43,364 - INFO - Failed to retrieve metadata. Status code: 403
+2025-01-12 17:42:18,164 - INFO - Starting bot...
+2025-01-12 17:42:19,217 - INFO - Application started
+2025-01-12 17:42:30,296 - INFO - Starting bot...
+2025-01-12 17:42:31,248 - INFO - Application started
+2025-01-12 17:42:43,022 - INFO - Subscribing to new token creation events...
+2025-01-12 17:43:23,897 - INFO - Failed to retrieve metadata. Status code: 403
+2025-01-12 17:45:30,654 - INFO - Successfully unsubscribed from new token creation events.
+2025-01-12 17:45:31,883 - INFO - WebSocket task completed or failed.
+2025-01-12 18:32:51,490 - ERROR - Error while getting Updates: httpx HTTPError: 
+2025-01-12 18:32:51,490 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 34, in read
+    return await self._stream.receive(max_bytes=max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/streams/tls.py", line 204, in receive
+    data = await self._call_sslobject_method(self._ssl_object.read, max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/streams/tls.py", line 147, in _call_sslobject_method
+    data = await self.transport_stream.receive()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1300, in receive
+    raise self._protocol.exception from None
+anyio.BrokenResourceError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 253, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 237, in handle_async_request
+    response = await connection.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 90, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 112, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 91, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 155, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 191, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 31, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc)
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 183, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1533, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1620, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1648, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1685, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1722, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 352, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_updater.py", line 600, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_updater.py", line 327, in polling_action_cb
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_updater.py", line 312, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 524, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 334, in decorator
+    result = await func(*args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 3584, in get_updates
+    await self._post(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 422, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 306, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 453, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 165, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 288, in _request_wrapper
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 274, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 204, in do_request
+    raise NetworkError(f"httpx HTTPError: {err}") from err
+telegram.error.NetworkError: httpx HTTPError: 
+2025-01-12 19:07:04,000 - INFO - Starting bot...
+2025-01-12 19:07:04,973 - INFO - Application started
+2025-01-12 19:07:17,382 - INFO - Starting bot...
+2025-01-12 19:07:18,524 - INFO - Application started
+2025-01-12 19:07:32,102 - INFO - Subscribing to new token creation events...
+2025-01-12 19:07:36,096 - ERROR - Error adding token data to database: send_telegram_message_if_same_twitter_connected() takes 4 positional arguments but 5 were given
+2025-01-12 19:07:37,014 - INFO - Successfully unsubscribed from new token creation events.
+2025-01-12 19:07:39,888 - INFO - WebSocket task completed or failed.
+2025-01-12 19:08:59,532 - INFO - Starting bot...
+2025-01-12 19:09:00,579 - INFO - Application started
+2025-01-12 19:09:10,450 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_application.py", line 1063, in process_update
+    await coroutine
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 312, in get_chat_ids
+    data = get_bot_updates().json()
+           ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'json'
+2025-01-12 19:10:24,194 - INFO - Starting bot...
+2025-01-12 19:10:25,154 - INFO - Application started
+2025-01-12 19:11:53,171 - INFO - Starting bot...
+2025-01-12 19:11:54,507 - INFO - Application started
+2025-01-12 19:13:11,537 - INFO - Starting bot...
+2025-01-12 19:13:12,606 - INFO - Application started
+2025-01-12 19:13:46,816 - INFO - Starting bot...
+2025-01-12 19:13:48,231 - INFO - Application started
+2025-01-12 19:20:27,759 - INFO - Starting bot...
+2025-01-12 19:20:28,951 - INFO - Application started
+2025-01-12 19:59:17,273 - INFO - Starting bot...
+2025-01-12 19:59:18,252 - INFO - Application started
+2025-01-12 20:04:38,480 - INFO - Starting bot...
+2025-01-12 20:04:39,370 - INFO - Application started
+2025-01-12 20:05:07,102 - INFO - Subscribing to new token creation events...
+2025-01-12 20:05:08,853 - ERROR - Error adding token data to database: send_telegram_message_if_same_twitter_connected() takes 4 positional arguments but 5 were given
+2025-01-12 20:05:18,008 - ERROR - Error adding token data to database: send_telegram_message_if_same_twitter_connected() takes 4 positional arguments but 5 were given
+2025-01-12 20:05:18,330 - ERROR - Error adding token data to database: send_telegram_message_if_same_twitter_connected() takes 4 positional arguments but 5 were given
+2025-01-12 20:05:21,386 - ERROR - Error adding token data to database: send_telegram_message_if_same_twitter_connected() takes 4 positional arguments but 5 were given
+2025-01-12 20:05:25,231 - ERROR - Error adding token data to database: send_telegram_message_if_same_twitter_connected() takes 4 positional arguments but 5 were given
+2025-01-12 20:05:28,965 - ERROR - Error adding token data to database: send_telegram_message_if_same_twitter_connected() takes 4 positional arguments but 5 were given
+2025-01-12 20:06:47,251 - INFO - Starting bot...
+2025-01-12 20:06:48,266 - INFO - Application started
+2025-01-12 20:06:52,583 - INFO - Subscribing to new token creation events...
+2025-01-12 20:06:57,264 - ERROR - Error adding token data to database: type object 'MemeCoins' has no attribute 'get_tokens_by_twitter_link'
+2025-01-12 20:06:57,265 - ERROR - Error adding token data to database: type object 'MemeCoins' has no attribute 'get_tokens_by_twitter_link'
+2025-01-12 20:06:59,254 - ERROR - Error adding token data to database: type object 'MemeCoins' has no attribute 'get_tokens_by_twitter_link'
+2025-01-12 20:06:59,254 - ERROR - Error adding token data to database: type object 'MemeCoins' has no attribute 'get_tokens_by_twitter_link'
+2025-01-12 20:07:05,432 - ERROR - Error adding token data to database: type object 'MemeCoins' has no attribute 'get_tokens_by_twitter_link'
+2025-01-12 20:07:05,768 - INFO - Application is stopping. This might take a moment.
+2025-01-12 20:07:05,769 - INFO - Application.stop() complete
+2025-01-12 20:09:14,521 - INFO - Starting bot...
+2025-01-12 20:09:15,624 - INFO - Application started
+2025-01-12 20:09:21,867 - INFO - Subscribing to new token creation events...
+2025-01-12 20:11:36,133 - INFO - Failed to retrieve metadata. Status code: 403
+2025-01-12 20:11:36,133 - INFO - ipfs URL: https://4everland.io/ipfs/QmfSuXJuGboyq88a8nFmoqYF39HjmDuFsTQqtFsWy8iUzr
+2025-01-12 20:12:19,450 - INFO - Token update - {count}
+2025-01-12 20:17:35,086 - INFO - Starting bot...
+2025-01-12 20:17:36,110 - INFO - Application started
+2025-01-12 20:17:47,629 - INFO - Subscribing to new token creation events...
+2025-01-12 20:21:08,778 - INFO - Starting bot...
+2025-01-12 20:21:10,063 - INFO - Application started
+2025-01-12 20:21:19,175 - INFO - Subscribing to new token creation events...
+2025-01-12 20:26:43,113 - INFO - Starting bot...
+2025-01-12 20:26:44,090 - INFO - Application started
+2025-01-12 20:26:51,244 - INFO - Subscribing to new token creation events...
+2025-01-12 20:27:44,099 - INFO - Failed to retrieve metadata. Status code: 403
+2025-01-12 20:27:44,099 - INFO - ipfs URL: https://4everland.io/ipfs/QmP3zZ6E8ggJ4Qsb3xHHxFgyFDjJLWrDP3PtSGJnQKqoQN
+2025-01-12 20:30:21,057 - INFO - Starting bot...
+2025-01-12 20:30:22,013 - INFO - Application started
+2025-01-12 20:30:25,937 - INFO - Subscribing to new token creation events...
+2025-01-12 20:32:18,097 - INFO - Starting bot...
+2025-01-12 20:32:19,258 - INFO - Application started
+2025-01-12 20:32:48,632 - INFO - Subscribing to new token creation events...
+2025-01-12 20:36:45,169 - INFO - Starting bot...
+2025-01-12 20:36:46,294 - INFO - Application started
+2025-01-12 20:36:55,244 - INFO - Subscribing to new token creation events...
+2025-01-12 20:39:50,505 - INFO - Starting bot...
+2025-01-12 20:39:51,673 - INFO - Application started
+2025-01-12 20:39:53,697 - INFO - Subscribing to new token creation events...
+2025-01-12 21:02:00,276 - INFO - Starting bot...
+2025-01-12 21:02:01,425 - INFO - Application started
+2025-01-12 21:02:11,450 - INFO - Subscribing to new token creation events...

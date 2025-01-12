@@ -66,22 +66,26 @@ class MemeCoins(db.Model):
     contract_adddress = db.Column(db.String(120), nullable=False)
     dev_address = db.Column(db.String(120), nullable=False)
     metadata_link = db.Column(db.String(120), nullable=False)
+    twitter_link = db.Column(db.String(150), nullable=False)
 
 
 
-    def add_meme_coin(token_name, token_ticker, contract_address, dev_address, metadata_link):
+
+    def add_meme_coin(token_name, token_ticker, contract_address, dev_address, metadata_link,twitter_link):
         try:
+            with app.app_context():
             # Create a new MemeCoinsDetails instance
-            new_token = MemeCoins(
-                token_name=token_name,
-                token_ticker=token_ticker,
-                contract_adddress=contract_address,
-                dev_address=dev_address,
-                metadata_link=metadata_link
-            )
+                new_token = MemeCoins(
+                    token_name=token_name,
+                    token_ticker=token_ticker,
+                    contract_adddress=contract_address,
+                    dev_address=dev_address,
+                    metadata_link=metadata_link,
+                    twitter_link=twitter_link.lower()
+                )
 
             # Add the new token to the session and commit
-            with app.app_context():
+            
                 db.session.add(new_token)
                 db.session.commit()
                 return True
@@ -109,7 +113,8 @@ class MemeCoins(db.Model):
                                 "token_ticker": token.token_ticker,
                                 "contract_address": token.contract_adddress,
                             "dev_address": token.dev_address,
-                            "metadata_link": token.metadata_link} for token in tokens]
+                            "metadata_link": token.metadata_link,
+                            "twitter_link": token.twitter_link} for token in tokens]
                 
                 tokens_list.reverse()
                 return tokens_list
@@ -132,13 +137,39 @@ class MemeCoins(db.Model):
                                 "token_ticker": token.token_ticker,
                                 "contract_address": token.contract_adddress,
                                 "dev_address": token.dev_address,
-                                "metadata_link": token.metadata_link} for token in tokens]
+                                "metadata_link": token.metadata_link,
+                                "twitter_link": token.twitter_link} for token in tokens]
                 
                 tokens_list.reverse()
                 return tokens_list
 
         except Exception as e:
             return jsonify({"message": f"Error occurred while fetching tokens: {str(e)}"}), 500
+
+    def get_tokens_by_twitter_link(twitter_link):
+        try:
+            with app.app_context():
+                # Query the database for all tokens with the same token_name
+                tokens = MemeCoins.query.filter_by(twitter_link=twitter_link).all()
+
+                # If no tokens are found with that name, return a message
+                if not tokens:
+                    return[]
+
+                # If tokens are found, return them in a JSON response
+                tokens_list = [{"token_name": token.token_name, 
+                                "token_ticker": token.token_ticker,
+                                "contract_address": token.contract_adddress,
+                                "dev_address": token.dev_address,
+                                "metadata_link": token.metadata_link,
+                                "twitter_link": token.twitter_link} for token in tokens]
+                
+                tokens_list.reverse()
+                return tokens_list
+
+        except Exception as e:
+            return jsonify({"message": f"Error occurred while fetching tokens: {str(e)}"}), 500
+
 
 
 

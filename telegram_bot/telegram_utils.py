@@ -2,7 +2,8 @@
 import requests  # Use an async HTTP library
 
 TELEGRAM_TOKEN = '7252788699:AAFjymiBcna1CZXYnpeB2EtVCJmeaXlxYUY'
-CHAT_IDS = ['1813173704']  
+CHAT_IDS = ['1813173704'] 
+
 
 def send_telegram_message_to_bot(message, parse_mode='HTML'):
     url = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage'
