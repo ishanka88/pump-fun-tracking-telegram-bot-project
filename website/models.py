@@ -146,7 +146,7 @@ class MemeCoins(db.Model):
         except Exception as e:
             return jsonify({"message": f"Error occurred while fetching tokens: {str(e)}"}), 500
 
-    def get_tokens_by_twitter_link(twitter_link):
+    def get_tokens_have_same_twitter(twitter_link):
         try:
             with app.app_context():
                 # Query the database for all tokens with the same token_name
@@ -211,6 +211,21 @@ class MemeCoins(db.Model):
         except Exception as e:
             print(f"Error occurred while checking token availability: {str(e)}")
             return False, "Error - while checking token availability"
+
+    def check_token_availability_from_twitter(twitter, duplicate_count=1):
+        try:
+            with app.app_context():
+                # Check how many tokens have the same token_ticker in the database
+                existing_toke_count = MemeCoins.query.filter_by(token_ticker=twitter).count()
+                if existing_toke_count >= duplicate_count:
+                    return True
+
+                # If neither token name nor ticker meets the duplicate count, it's available
+                return False
+
+        except Exception as e:
+            print(f"Error occurred while checking token availability: {str(e)}")
+            return False
 
 
 

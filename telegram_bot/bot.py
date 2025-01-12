@@ -403,12 +403,12 @@ async def add_token_data_into_database(token_name, token_symbol, contract_addres
 
 
 async def send_telegram_message_if_same_twitter_connected(twitter_link,token_symbol,token_name,contract_address):
-    global group2_id
+    global group2_id , default_Multiplicity_value
     try:
         async with semaphore:
-            tokens_list=MemeCoins.get_tokens_by_twitter_link(twitter_link)
+            tokens_list=MemeCoins.get_tokens_have_same_twitter(twitter_link)
             total_tokens_count=len(tokens_list)
-            if total_tokens_count > 0 :
+            if total_tokens_count >= default_Multiplicity_value :
                 unique_tokens_list=get_unique_tokens(tokens_list)
                 send_telegram_message_if_found_a_trending_token(unique_tokens_list,total_tokens_count,token_symbol,token_name,contract_address,group2_id)
                 
