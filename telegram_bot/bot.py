@@ -56,6 +56,7 @@ async def subscribe(update: Update, context: CallbackContext):
                 async with websockets.connect(uri) as ws:
                     websocket = ws
                     print("Subscribing to new token creation events...")
+                    logging.info("Subscribing to new token creation events...")
                     payload = {"method": "subscribeNewToken"}
                     await websocket.send(json.dumps(payload))
 
@@ -69,7 +70,7 @@ async def subscribe(update: Update, context: CallbackContext):
                         token_symbol = data.get("symbol", "")
                         if token_symbol == "":
                             continue
-                        print(token_symbol)
+                        #print(token_symbol)
                         token_name = data.get("name", "")
                         contract_address = data.get("mint", "")
                         developer = data.get("traderPublicKey", "")
@@ -86,6 +87,7 @@ async def subscribe(update: Update, context: CallbackContext):
                         if count % 100 == 0:
                             message = f"""⏰⏰⏰⏰⏰⏰\n\n *Token update - {count}*\n\n⏰⏰⏰⏰⏰⏰"""
                             send_telegram_message_to_bot(message, parse_mode='Markdown')
+                            logging.info("Token update - {count}")
                             print(f"⏰⏰⏰⏰⏰⏰ Token update - {count} ⏰⏰⏰⏰⏰⏰")
 
 
@@ -111,6 +113,7 @@ async def subscribe(update: Update, context: CallbackContext):
 
         except Exception as e:
             send_telegram_message_to_bot(f"Error subscribing to WebSocket: {e}")
+            logging.exception("Error subscribing to WebSocket: %s", str(e))
             print(f"Error subscribing to WebSocket: {e}")
             if websocket:
                 await websocket.close()
@@ -121,6 +124,8 @@ async def subscribe(update: Update, context: CallbackContext):
             if is_subscribed:
                 send_telegram_message_to_bot("*WebSocket task completed or failed (Still Subscribed TRUE).*", parse_mode='Markdown')
                 print("WebSocket task completed or failed (Still Subscribed TRUE).")
+                logging.info("WebSocket task completed or failed (Still Subscribed TRUE).")
+
 
                 asyncio.create_task(subscribe_to_tokens())
 
@@ -129,6 +134,8 @@ async def subscribe(update: Update, context: CallbackContext):
             else:
                 send_telegram_message_to_bot("*WebSocket task completed or failed.*", parse_mode='Markdown')
                 print("WebSocket task completed or failed.")
+                logging.info("WebSocket task completed or failed.")
+
                 send_telegram_message_to_bot("*Successfully unsubscribed from new token creation events.*", parse_mode='Markdown')
                 is_connected = False
                 is_subscribed = False
@@ -145,12 +152,16 @@ async def unsubscribe(update: Update, context: CallbackContext):
             await websocket.send(json.dumps(payload))
             send_telegram_message_to_bot("*Successfully unsubscribed from new token creation events.*", parse_mode='Markdown')
             print("Successfully unsubscribed from new token creation events.")
+            logging.info("Successfully unsubscribed from new token creation events.")
+
         else:
             send_telegram_message_to_bot("*Already Unsubscribed.*", parse_mode='Markdown')
             print("Already Unsubscribed.")
     except Exception as e:
         send_telegram_message_to_bot(f"An error occurred while unsubscribing: {e}", parse_mode='Markdown')
         print(f"An error occurred while unsubscribing: {e}")
+        logging.exception("An error occurred while unsubscribing: %s", str(e))
+
     finally:
         if websocket:
             await websocket.close()
@@ -276,6 +287,7 @@ async def terminate_the_programme(update: Update, context: CallbackContext):
 
             time.sleep(5)
             print("Terminated the proggrame")
+            logging.info("Terminated the proggrame")
             #Exit the script
             sys.exit()
 
@@ -283,6 +295,8 @@ async def terminate_the_programme(update: Update, context: CallbackContext):
             send_telegram_message_to_bot(message, parse_mode='Markdown')
             send_telegram_message(message,group1_id, parse_mode='Markdown')
             print("Error - Terminate unsuccessfull. Programe is still running")
+            logging.info("Error - Terminate unsuccessfull. Programe is still running")
+
         else:
             send_telegram_message_to_bot(f"invalid input. copy and send this command `/terminate yes`")
             
@@ -312,8 +326,12 @@ async def run_telegram_bot():
     application.add_handler(CallbackQueryHandler(delete_token, pattern="^yes_|^no_"))
 
     print("Starting bot...")
+    logging.info("Starting bot...")
+
     await application.run_polling()
     print("Bot is now running.")
+    logging.info("Bot is now running.")
+
 
     #commands in telgram
 
@@ -362,9 +380,12 @@ def get_ipfs_metadata(ipfs_url):
             return response.json()
         else:
             print(f"Failed to retrieve metadata. Status code: {response.status_code}")
+            logging.info(f"Failed to retrieve metadata. Status code: {response.status_code}")
             return None
+        
     except requests.RequestException as e:
         print(f"An error occurred: {e}")
+        logging.exception("An error occurred: %s", str(e))
         return None
 
 def get_match_percentage(str1, str2):

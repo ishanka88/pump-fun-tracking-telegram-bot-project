@@ -46,7 +46,7 @@
       17. git status
 
 -- APP RUN --
-
+        1. source venv/bin/activate
         1. pip install -r requirements.txt
         2. python3 run.py
 

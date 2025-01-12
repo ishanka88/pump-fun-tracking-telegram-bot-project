@@ -1,9 +1,36 @@
 import asyncio
 import threading
+import logging
 import nest_asyncio
+from logging.handlers import RotatingFileHandler
 from website import app  # Flask app
 from telegram_bot.bot import run_telegram_bot  # Your Telegram bot logic
 from werkzeug.serving import make_server
+
+# Set up log rotation
+handler = RotatingFileHandler('app.log', maxBytes=50*1024*1024, backupCount=3)
+handler.setLevel(logging.DEBUG)
+
+# Set log format
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+
+# Add the handler to the logger
+logging.getLogger().addHandler(handler)
+
+# Configure logging for the application
+logging.basicConfig(
+    level=logging.DEBUG,          # Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Log format
+)
+
+# # Example logging messages
+# logging.debug("This is a debug message")
+# logging.info("This is an info message")
+# logging.warning("This is a warning message")
+# logging.error("This is an error message")
+# logging.critical("This is a critical message")
+# logging.exception("An error occurred: %s", str(e))
 
 # Apply nest_asyncio to allow nested event loops
 nest_asyncio.apply()
