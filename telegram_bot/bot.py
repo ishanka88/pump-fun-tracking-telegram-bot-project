@@ -496,9 +496,9 @@ def send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_c
     
 
     if total_tokens_count == default_Multiplicity_value:
-        topic ="New Trending Token Found" # f"[😍]({new_image_url if new_image_url else f'https://pump.fun/coin/{g_contract_address}'}) *New Trending Token Found* 😍"
+        topic =f"[😍]({new_image_url}) *New Trending Token Found* 😍"
     else:
-        topic = "New Trending Token Found" #f"[🔥]({new_image_url if new_image_url else f"https://pump.fun/coin/{g_contract_address}"}) *New Update* 🔥"
+        topic = f"[🔥]({new_image_url}) *New Update* 🔥"
 
     main_message = f"""
 
@@ -515,10 +515,15 @@ def escape_markdown(text):
     if text is None:
         return ''
     
-    markdown_chars = ['*', '_', '~', '`', '[', ']', '(', ')', '#', '+', '-', '!']
+    # List of special markdown characters to escape
+    markdown_chars = ['*', '_', '~', '`', '[', ']', '(', ')', '#', '+', '-', '!', '|', '<', '>', '=', '.', ':']
+    
+    # Iterate through each markdown character and escape it
     for char in markdown_chars:
         text = text.replace(char, f"\\{char}")
+    
     return text
+
 
 
 
