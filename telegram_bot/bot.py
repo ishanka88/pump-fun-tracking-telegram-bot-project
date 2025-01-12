@@ -25,7 +25,7 @@ is_connected = False
 is_subscribed = False
 websocket = None
 count = 0
-default_Multiplicity_value = 4
+default_Multiplicity_value = 2
 token_names = TrackingTokenNames.get_all_tokens()
 
 # Set up logging to see what is happening
@@ -444,6 +444,7 @@ def send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_c
     global default_Multiplicity_value ,group1_id
     
     new_image_url = f"https://pump.fun/coin/{contract_address}"
+    genuine_or_not = "❌"
     
     unique_tokens_count = len(unique_tokens)
     if not len (unique_tokens)==0:
@@ -469,6 +470,10 @@ def send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_c
                 image_link = meta_data.get("image", None) if meta_data else None
                 if image_link:
                     new_image_url= image_link
+
+                if g_contract_address == contract_address :
+                    genuine_or_not = "✅"
+
             # Using escape_markdown with None values now handled properly
             website_url = meta_data.get("website", None) if meta_data else None
             telegram_url = meta_data.get("telegram", None) if meta_data else None
@@ -502,7 +507,7 @@ def send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_c
 
     main_message = f"""
 
-    {topic}\n\n`{escape_markdown(token_name)}` (`{escape_markdown(token_symbol)}`)\n\nMultiplicity : *{total_tokens_count}*  (default {default_Multiplicity_value})\n\n✔️ *{unique_tokens_count} Genuine* | ❌  *{total_tokens_count - unique_tokens_count } Fake*\n\n{genuine_list_string}\n\n..."""
+    {topic}\n\n`{escape_markdown(token_name)}` (`{escape_markdown(token_symbol)}`) {genuine_or_not}\n\nMultiplicity : *{total_tokens_count}*  (default {default_Multiplicity_value})\n\n✔️ *{unique_tokens_count} Genuine* | ❌  *{total_tokens_count - unique_tokens_count } Fake*\n\n{genuine_list_string}\n\n..."""
 
     empty_message = "\n⭕\n"
     send_telegram_message(empty_message, group1_id,parse_mode='Markdown')

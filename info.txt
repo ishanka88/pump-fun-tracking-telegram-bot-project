@@ -67,3 +67,5 @@
         To reattach to your screen session and see the running output, use: ### Connect again
                 tmux ls   ### Check terminal list
                 tmux attach -t botSesssion
+
+                exit # To terminate the terminal 

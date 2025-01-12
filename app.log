@@ -1,0 +1,59 @@
+2025-01-12 15:18:33,946 - INFO - Starting bot...
+2025-01-12 15:18:35,154 - INFO - Application started
+2025-01-12 15:18:59,094 - INFO - Application is stopping. This might take a moment.
+2025-01-12 15:18:59,094 - INFO - Application.stop() complete
+2025-01-12 15:19:01,531 - INFO - Starting bot...
+2025-01-12 15:19:02,511 - INFO - Application started
+2025-01-12 15:19:13,421 - INFO - Application is stopping. This might take a moment.
+2025-01-12 15:19:13,421 - INFO - Application.stop() complete
+2025-01-12 15:19:16,124 - INFO - Starting bot...
+2025-01-12 15:19:17,343 - INFO - Application started
+2025-01-12 15:19:44,059 - INFO - Subscribing to new token creation events...
+2025-01-12 15:21:51,181 - INFO - Application is stopping. This might take a moment.
+2025-01-12 15:21:51,181 - INFO - Application.stop() complete
+2025-01-12 15:21:53,917 - INFO - Starting bot...
+2025-01-12 15:21:54,992 - INFO - Application started
+2025-01-12 15:22:05,603 - INFO - Subscribing to new token creation events...
+2025-01-12 15:22:10,751 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<check_same_token_availability() done, defined at /home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py:404> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 424, in check_same_token_availability
+    send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_count,token_symbol,token_name,contract_address)
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 448, in send_telegram_message_if_found_a_trending_token
+    if unique_tokens[0].get("contract_address")== contract_address :
+       ~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2025-01-12 15:22:10,849 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<check_same_token_availability() done, defined at /home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py:404> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 424, in check_same_token_availability
+    send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_count,token_symbol,token_name,contract_address)
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 448, in send_telegram_message_if_found_a_trending_token
+    if unique_tokens[0].get("contract_address")== contract_address :
+       ~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2025-01-12 15:22:34,673 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<check_same_token_availability() done, defined at /home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py:404> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 424, in check_same_token_availability
+    send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_count,token_symbol,token_name,contract_address)
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 448, in send_telegram_message_if_found_a_trending_token
+    if unique_tokens[0].get("contract_address")== contract_address :
+       ~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2025-01-12 15:22:42,554 - INFO - Application is stopping. This might take a moment.
+2025-01-12 15:22:42,555 - INFO - Application.stop() complete
+2025-01-12 15:26:08,335 - INFO - Starting bot...
+2025-01-12 15:26:09,323 - INFO - Application started
+2025-01-12 15:26:24,869 - INFO - Subscribing to new token creation events...
+2025-01-12 15:30:01,476 - INFO - Application is stopping. This might take a moment.
+2025-01-12 15:30:01,477 - INFO - Application.stop() complete
