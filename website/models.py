@@ -2,6 +2,10 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask import jsonify
 from sqlalchemy.exc import IntegrityError
+from datetime import datetime
+from sqlalchemy import Column, Integer, String, DateTime
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.sql import func
 
 # Initialize Flask app and SQLAlchemy
 app = Flask(__name__)
@@ -61,6 +65,10 @@ class TrackingTokenNames(db.Model):
 
 class MemeCoins(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+     
+     # Automatically set current timestamp in UTC when the row is inserted
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
     token_name = db.Column(db.String(120),nullable=False)
     token_ticker = db.Column(db.String(120), nullable=False)
     contract_adddress = db.Column(db.String(120), nullable=False)

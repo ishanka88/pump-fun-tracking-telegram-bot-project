@@ -1,13 +1,11 @@
 
 import requests  # Use an async HTTP library
 
-TELEGRAM_TOKEN = '7252788699:AAFjymiBcna1CZXYnpeB2EtVCJmeaXlxYUY'
-CHAT_IDS = ['1813173704'] 
-
+from config import Config
 
 def send_telegram_message_to_bot(message, parse_mode='HTML'):
-    url = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage'
-    for chat_id in CHAT_IDS:
+    url = f'https://api.telegram.org/bot{Config.TELEGRAM_TOKEN}/sendMessage'
+    for chat_id in Config.CHAT_IDS:
         params = {
             'chat_id': chat_id,
             'text': message,
@@ -16,7 +14,7 @@ def send_telegram_message_to_bot(message, parse_mode='HTML'):
         response = requests.get(url, params=params)
         
 def send_telegram_message(message,chat_id, parse_mode='HTML'):
-    url = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage'
+    url = f'https://api.telegram.org/bot{Config.TELEGRAM_TOKEN}/sendMessage'
     
     params = {
         'chat_id': chat_id,

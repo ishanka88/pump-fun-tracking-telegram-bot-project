@@ -1,7 +1,12 @@
 from flask import Flask, render_template
 from telegram_bot.bot import run_telegram_bot
+import asyncio
+from config import Config
 
 app = Flask(__name__)
+
+# Load the configuration from the Config class
+app.config.from_object(Config)
 
 @app.route('/')
 def home():

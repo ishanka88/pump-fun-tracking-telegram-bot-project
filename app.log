@@ -927,3 +927,202 @@ AttributeError: 'dict' object has no attribute 'json'
 2025-01-12 21:02:00,276 - INFO - Starting bot...
 2025-01-12 21:02:01,425 - INFO - Application started
 2025-01-12 21:02:11,450 - INFO - Subscribing to new token creation events...
+2025-01-13 14:05:17,371 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_application.py", line 1063, in process_update
+    await coroutine
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 239, in set_duplicate_count
+    send_telegram_message_to_bot(f"Duplicate count has been set to {Config.default_Multiplicity_value}.", parse_mode='Markdown')
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Config' has no attribute 'default_Multiplicity_value'
+2025-01-13 14:40:12,041 - ERROR - Error subscribing to WebSocket: name 'TOKEN_NAMES_LIST' is not defined
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 53, in subscribe_to_tokens
+    send_telegram_message_to_bot(f"*Successfully subscribed to new token creation events for token names:\n\n* {', '.join(TOKEN_NAMES_LIST)}", parse_mode='Markdown')
+                                                                                                                          ^^^^^^^^^^^^^^^^
+NameError: name 'TOKEN_NAMES_LIST' is not defined
+2025-01-13 14:40:16,958 - ERROR - Error subscribing to WebSocket: name 'TOKEN_NAMES_LIST' is not defined
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 53, in subscribe_to_tokens
+    send_telegram_message_to_bot(f"*Successfully subscribed to new token creation events for token names:\n\n* {', '.join(TOKEN_NAMES_LIST)}", parse_mode='Markdown')
+                                                                                                                          ^^^^^^^^^^^^^^^^
+NameError: name 'TOKEN_NAMES_LIST' is not defined
+2025-01-13 14:44:04,903 - ERROR - Error subscribing to WebSocket: name 'TOKEN_NAMES_LIST' is not defined
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 53, in subscribe_to_tokens
+    send_telegram_message_to_bot(f"*Successfully subscribed to new token creation events for token names:\n\n* {', '.join(TOKEN_NAMES_LIST)}", parse_mode='Markdown')
+                                                                                                                          ^^^^^^^^^^^^^^^^
+NameError: name 'TOKEN_NAMES_LIST' is not defined
+2025-01-13 14:44:09,306 - ERROR - Error subscribing to WebSocket: name 'TOKEN_NAMES_LIST' is not defined
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 53, in subscribe_to_tokens
+    send_telegram_message_to_bot(f"*Successfully subscribed to new token creation events for token names:\n\n* {', '.join(TOKEN_NAMES_LIST)}", parse_mode='Markdown')
+                                                                                                                          ^^^^^^^^^^^^^^^^
+NameError: name 'TOKEN_NAMES_LIST' is not defined
+2025-01-13 14:46:01,870 - ERROR - Error subscribing to WebSocket: 'module' object is not callable
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 71, in subscribe_to_tokens
+    asyncio.create_task(add_token_data_into_database (token_name, token_symbol,contract_address,developer,url_link))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+2025-01-13 14:46:07,990 - ERROR - Error subscribing to WebSocket: 'module' object is not callable
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 71, in subscribe_to_tokens
+    asyncio.create_task(add_token_data_into_database (token_name, token_symbol,contract_address,developer,url_link))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+2025-01-13 14:49:07,367 - ERROR - Error subscribing to WebSocket: 'module' object is not callable
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 72, in subscribe_to_tokens
+    asyncio.create_task(add_token_data_into_database (token_name, token_symbol,contract_address,developer,url_link))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+2025-01-13 14:51:33,505 - ERROR - Error subscribing to WebSocket: 'module' object is not callable
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 71, in subscribe_to_tokens
+    asyncio.create_task(add_token_data_into_database (token_name, token_symbol,contract_address,developer,url_link))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+2025-01-13 14:53:11,204 - ERROR - Error subscribing to WebSocket: 'module' object is not callable
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 71, in subscribe_to_tokens
+    asyncio.create_task(add_token_data_into_database (token_name, token_symbol,contract_address,developer,url_link))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+2025-01-13 14:54:19,979 - ERROR - Error subscribing to WebSocket: 'module' object is not callable
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 70, in subscribe_to_tokens
+    asyncio.create_task(add_token_data_into_database (token_name, token_symbol,contract_address,developer,url_link))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+2025-01-13 14:54:26,565 - ERROR - Error subscribing to WebSocket: 'module' object is not callable
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 70, in subscribe_to_tokens
+    asyncio.create_task(add_token_data_into_database (token_name, token_symbol,contract_address,developer,url_link))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+2025-01-13 15:33:34,890 - ERROR - Error subscribing to WebSocket: module 'telegram_bot.methods' has no attribute 'check_token_name_available_in_the_list_and_send_telegram_message'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 76, in subscribe_to_tokens
+    asyncio.create_task(methods.check_token_name_available_in_the_list_and_send_telegram_message(token_name,token_symbol,contract_address,developer, url_link))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'telegram_bot.methods' has no attribute 'check_token_name_available_in_the_list_and_send_telegram_message'
+2025-01-13 15:33:40,725 - ERROR - Error subscribing to WebSocket: module 'telegram_bot.methods' has no attribute 'check_token_name_available_in_the_list_and_send_telegram_message'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 76, in subscribe_to_tokens
+    asyncio.create_task(methods.check_token_name_available_in_the_list_and_send_telegram_message(token_name,token_symbol,contract_address,developer, url_link))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'telegram_bot.methods' has no attribute 'check_token_name_available_in_the_list_and_send_telegram_message'
+2025-01-13 15:40:19,762 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:40:20,136 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:40:21,936 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:40:27,985 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:40:30,306 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:40:36,009 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:40:36,395 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:40:36,784 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:40:46,084 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:40:53,707 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:40:57,218 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:10,129 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:11,629 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:13,208 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:18,863 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:24,208 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:37,374 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:37,974 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:38,597 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:42,908 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:45,064 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:57,554 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:58,164 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:41:58,714 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:00,320 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:03,964 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:10,864 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:12,076 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:13,854 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:19,376 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:22,487 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:26,276 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:35,353 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:38,524 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:44,159 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:47,229 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:50,405 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:42:53,679 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:49:36,717 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:49:39,680 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:49:42,646 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:49:43,746 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:49:44,331 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:49:54,541 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:49:57,821 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:50:13,485 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:50:19,015 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:50:22,394 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:50:27,004 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:50:31,510 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:50:35,194 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:50:38,574 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:50:43,591 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:51:27,520 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:51:31,402 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:51:35,712 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:51:38,682 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:51:41,753 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:51:44,679 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:51:47,277 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:51:51,380 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:51:54,451 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:51:57,216 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:52:03,464 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:52:06,538 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:52:09,709 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:52:12,576 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:52:15,853 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:52:19,089 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:52:21,997 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:52:25,273 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:52:28,237 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:52:31,119 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:01,011 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:06,745 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:09,920 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:13,914 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:18,009 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:23,848 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:26,714 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:29,478 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:32,756 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:36,031 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:39,017 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:41,971 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:45,248 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:48,013 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 15:53:51,079 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:04:22,361 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:04:29,458 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:04:33,213 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:04:34,836 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:04:40,369 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:04:42,103 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:04:42,747 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:04:43,714 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:04:58,470 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:04:59,081 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:06,259 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:09,293 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:09,870 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:10,371 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:14,182 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:15,804 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:18,882 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:19,237 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:20,940 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:36,840 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:37,763 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:05:39,496 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
