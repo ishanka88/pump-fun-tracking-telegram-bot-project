@@ -9,6 +9,10 @@ from telegram_bot.telegram_utils import send_telegram_message, send_telegram_mes
 from semaphore import semaphore
 from website.models import MemeCoins
 from collections import Counter
+from datetime import datetime
+from sqlalchemy import func
+from sqlalchemy.orm import sessionmaker
+
 
 #############################################
 async def add_token_data_into_database(token_name, token_symbol, contract_address, developer, url_link):
@@ -201,6 +205,9 @@ def send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_c
             g_contract_address = token.get("contract_address")
             g_dev_address = token.get("dev_address")
             g_metadata_link = token.get("metadata_link")
+            g_created_at = token.get("created_at")
+
+            created_time_from_now = time_since_added(g_created_at)
 
             i=i+1
             meta_data = get_ipfs_metadata(g_metadata_link)
@@ -232,7 +239,7 @@ def send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_c
                 twitter_user_name_string= f" - @{escape_markdown(twitter_url.split('/')[-1])}"
 
 
-            genuine_list_string = genuine_list_string + f"""\n\n*{f"{i:02d}" if i < 10 else str(i)}*. `{g_token_name}`(`{g_token_ticker}`)\n  [💊](https://pump.fun/coin/{g_contract_address}) [📝](https://solscan.io/token/{g_contract_address}) [🙋‍♂️](https://solscan.io/account/{g_dev_address}){website_url_string}{telegram_url_string}{twitter_url_string}{twitter_user_name_string} """
+            genuine_list_string = genuine_list_string + f"""\n\n*{f"{i:02d}" if i < 10 else str(i)}*. `{g_token_name}`(`{g_token_ticker}`)\n  Created Time -{created_time_from_now}\n  [💊](https://pump.fun/coin/{g_contract_address}) [📝](https://solscan.io/token/{g_contract_address}) [🙋‍♂️](https://solscan.io/account/{g_dev_address}){website_url_string}{telegram_url_string}{twitter_url_string}{twitter_user_name_string} """
                   
     else:
         genuine_list_string ="⤵️⤵️ *GENUINE LIST* ⤵️⤵️\n\n   No Genuine Tokens ❌"
@@ -265,3 +272,46 @@ async def send_telegram_message_if_same_twitter_connected(twitter_link,token_sym
                 
     except Exception as e:
         logging.error(f"Error adding token data to database: {e}")
+
+##############################################################
+
+def time_since_added(created_at):
+    try:
+        # Get the current time in UTC
+        now = datetime.utcnow()
+
+        # Calculate the time difference
+        time_diff = now - created_at
+
+        # Convert time_diff to seconds
+        seconds = time_diff.total_seconds()
+
+        # Convert seconds into more readable units
+        days = seconds // (24 * 3600)
+        hours = (seconds % (24 * 3600)) // 3600
+        minutes = (seconds % 3600) // 60
+        seconds = int(seconds % 60)  # Convert to integer to avoid float display
+
+        # Build the time string conditionally based on non-zero values
+        time_parts = []
+        if not seconds ==0:
+            if days > 0:
+                time_parts.append(f"{int(days)}d")
+            if hours > 0:
+                time_parts.append(f"{int(hours)}h")
+            if minutes > 0:
+                time_parts.append(f"{int(minutes)}m")
+            elif seconds > 0:  # Only show seconds if minutes are zero
+                time_parts.append(f"{seconds}s")
+
+        else:
+            time_parts.append("NOW 🟢")
+        # Join the parts into a single string and return
+        time_str = " ".join(time_parts)
+
+        return time_str
+    
+    except Exception as e:
+        logging.error(f"Error in time_since_added method: {e}")
+        print(str(e))
+        return "Error in calculating time"

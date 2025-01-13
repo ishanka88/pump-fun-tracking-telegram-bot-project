@@ -117,7 +117,8 @@ class MemeCoins(db.Model):
                     return []
 
                 # If tokens are found, return them in a JSON response
-                tokens_list = [{"token_name": token.token_name, 
+                tokens_list = [{"created_at" : token.created_at,
+                                "token_name": token.token_name,
                                 "token_ticker": token.token_ticker,
                                 "contract_address": token.contract_adddress,
                             "dev_address": token.dev_address,
@@ -141,7 +142,8 @@ class MemeCoins(db.Model):
                     return[]
 
                 # If tokens are found, return them in a JSON response
-                tokens_list = [{"token_name": token.token_name, 
+                tokens_list = [{"created_at" : token.created_at,
+                                "token_name": token.token_name, 
                                 "token_ticker": token.token_ticker,
                                 "contract_address": token.contract_adddress,
                                 "dev_address": token.dev_address,
@@ -165,7 +167,8 @@ class MemeCoins(db.Model):
                     return[]
 
                 # If tokens are found, return them in a JSON response
-                tokens_list = [{"token_name": token.token_name, 
+                tokens_list = [{"created_at" : token.created_at,
+                                "token_name": token.token_name, 
                                 "token_ticker": token.token_ticker,
                                 "contract_address": token.contract_adddress,
                                 "dev_address": token.dev_address,

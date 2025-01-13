@@ -1126,3 +1126,330 @@ AttributeError: module 'telegram_bot.methods' has no attribute 'check_token_name
 2025-01-13 16:05:36,840 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
 2025-01-13 16:05:37,763 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
 2025-01-13 16:05:39,496 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:26:29,766 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:26:33,694 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:26:37,761 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:26:38,173 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:26:48,505 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:26:51,650 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:26:57,639 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:07,274 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:09,206 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:14,039 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:19,240 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:21,263 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:21,686 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:24,517 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:31,673 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:27:31,673 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:44,453 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:44,806 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:27:44,807 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:44,807 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:27:52,239 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:27:57,551 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:27:57,552 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:06,470 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:06,819 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:06,819 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:06,820 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:16,375 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:16,375 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:16,376 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:19,581 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:19,964 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:19,964 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:20,297 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:20,297 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:22,119 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:22,119 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:22,618 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:22,618 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:32,444 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:37,190 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:37,573 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:37,573 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:45,220 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:45,220 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:46,073 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:46,073 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:46,073 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:48,863 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:49,429 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:49,429 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:49,818 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:49,818 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:52,429 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:52,429 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:28:52,429 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:53,751 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:28:53,751 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:01,518 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:01,518 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:02,532 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:02,532 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:12,006 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:12,419 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:12,419 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:12,765 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:12,765 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:13,074 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:13,074 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:17,419 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:17,420 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:18,132 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:18,132 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:26,275 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:26,275 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:36,990 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:36,990 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:37,298 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:37,298 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:39,632 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:39,632 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:39,632 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:42,936 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:43,309 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:43,309 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:45,909 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:45,910 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:50,243 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:50,243 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:50,587 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:50,587 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:53,379 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:29:58,299 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:29:58,299 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:30:02,265 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:30:02,266 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:30:02,699 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:30:02,699 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:30:02,700 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:30:03,987 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:30:03,988 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:30:07,745 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:30:07,745 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:30:07,746 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:30:10,578 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:30:10,932 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:30:10,932 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:30:15,321 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:30:15,321 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:30:23,311 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:30:25,022 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:30:25,022 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:16,234 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:16,234 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:17,474 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:17,474 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:21,542 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:21,543 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:25,809 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:25,809 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:25,810 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:26,375 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:26,375 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:26,997 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:26,998 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:28,631 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:28,631 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:28,632 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:32,676 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:32,677 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:33,399 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:33,399 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:33,400 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:36,699 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:36,700 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:36,700 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:39,744 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:39,744 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:51,634 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:51,635 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:55,969 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:34:55,969 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:34:55,970 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:35:02,725 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:35:02,725 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:35:09,159 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:35:09,159 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:35:13,624 - ERROR - Error checking token availability: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:35:13,624 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:35:13,625 - ERROR - Error adding token data to database: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:36:48,120 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:36:50,587 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:36:50,961 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:36:53,251 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:36:53,606 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:36:55,912 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:36:56,604 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:36:59,088 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:37:01,605 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:37:04,208 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:37:04,210 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:38:36,285 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:38:39,549 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:38:39,551 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:39:59,427 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:40:01,783 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:40:02,168 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:40:04,545 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:40:04,547 - ERROR - Error time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:42:07,040 - ERROR - Error in time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:42:09,582 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:42:10,746 - ERROR - Error in time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:42:14,292 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:42:14,646 - ERROR - Error in time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:43:32,692 - ERROR - Error in time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:43:34,987 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:43:35,331 - ERROR - Error in time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:43:37,752 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:43:38,198 - ERROR - Error in time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:43:40,520 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:43:40,522 - ERROR - Error in time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:43:43,409 - ERROR - Error in time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:43:45,944 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:43:46,301 - ERROR - Error in time_since_added method: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2025-01-13 16:47:02,972 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:06,412 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:09,626 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:12,700 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:15,565 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:18,433 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:21,402 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:24,375 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:27,137 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:32,362 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:35,329 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:47:37,992 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:13,636 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:16,547 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:19,515 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:25,105 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:33,400 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:36,472 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:39,441 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:42,207 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:44,972 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:47,838 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:49:58,181 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:59:05,681 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:59:17,303 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:59:40,163 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:59:44,129 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 16:59:52,618 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:00:07,913 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:00:12,064 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:00:17,476 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:00:28,571 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:00:31,131 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:16,501 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:19,576 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:24,899 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:27,765 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:30,466 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:33,193 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:36,060 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:38,927 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:41,794 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:44,559 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:47,324 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:02:50,191 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:04:12,853 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:04:15,697 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:04:18,565 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:04:21,432 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:04:24,094 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:04:27,576 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:04:35,358 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:04:43,143 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:04:53,511 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:04:59,119 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:01,778 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:13,042 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:15,910 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:21,234 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:24,101 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:26,763 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:29,734 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:40,386 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:43,250 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:46,116 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:48,821 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:51,646 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:05:54,207 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:12:20,446 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:12:28,740 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:12:33,246 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:12:41,949 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:12:44,715 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:12:47,226 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:12:49,835 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:12:52,599 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:12:55,364 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:12:58,128 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:13:06,116 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:13:09,290 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:13:20,145 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:13:22,910 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:13:26,186 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:13:29,053 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:13:31,817 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:13:34,685 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:13:37,654 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
+2025-01-13 17:13:43,698 - ERROR - Error subscribing to WebSocket: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1314, in close_connection
+    await self.transfer_data_task
+  File "/usr/lib/python3.12/asyncio/futures.py", line 287, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/usr/lib/python3.12/asyncio/futures.py", line 198, in result
+    raise exc
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 968, in transfer_data
+    message = await self.read_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1038, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1113, in read_data_frame
+    frame = await self.read_frame(max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1170, in read_frame
+    frame = await Frame.read(
+            ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/framing.py", line 69, in read
+    data = await reader(2)
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "/usr/lib/python3.12/asyncio/streams.py", line 545, in _wait_for_data
+    await self._waiter
+  File "/usr/lib/python3.12/asyncio/futures.py", line 287, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/usr/lib/python3.12/asyncio/futures.py", line 198, in result
+    raise exc
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 57, in subscribe_to_tokens
+    async for message in websocket:
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 497, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+2025-01-13 17:13:50,867 - ERROR - Error checking tokens and sending message: name 'token_names' is not defined
