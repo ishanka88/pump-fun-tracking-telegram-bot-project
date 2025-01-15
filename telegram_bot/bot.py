@@ -71,7 +71,8 @@ async def subscribe(update: Update, context: CallbackContext):
                             token_ticker = data.get("symbol", "")
                             if token_ticker == "":
                                 continue
-                            print(token_ticker)
+                            #rint(token_ticker)
+
                             token_name = data.get("name", "")
                             contract_address = data.get("mint", "")
                             dev_address = data.get("traderPublicKey", "")
