@@ -280,7 +280,6 @@ async def block_fake_twitter(update: Update, context: CallbackContext):
                         
                         reply_markup = InlineKeyboardMarkup(keyboard)
                         await query.edit_message_reply_markup(reply_markup=reply_markup)
-                        print("deleeeee")
                         data = MessageIdBasedOnTwitter.check_twitter_handle_exists_from_twitter_link(twitter)
                         if data:
                             delete_message(Config.GROUP2_ID,data["message_id"])

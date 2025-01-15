@@ -262,8 +262,6 @@ def send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_c
             else:
                 twitter_hash_id = hashlib.md5(twitter.encode()).hexdigest()
 
-            print (twitter_hash_id)
-
             keyboard = [
                     [InlineKeyboardButton("BLOCK TWITTER", callback_data=f"block_{twitter_hash_id}")]
                 ]
@@ -356,8 +354,8 @@ def send_telegram_message_if_found_a_trending_token(unique_tokens,total_tokens_c
                 pre_empty_msg_id = already_exit["empty_msg_id"]
                 pre_multiple_count = already_exit["multiple_count"]
 
-                delete_message(groupId,pre_empty_msg_id)
-                delete_message(groupId,pre_msg_id)
+                delete_message(groupId, pre_empty_msg_id)
+                delete_message(groupId, pre_msg_id)
                 
                 new_multiple_count =pre_multiple_count+1
 
