@@ -61,10 +61,13 @@
         3. python3 run.py
 
         To disconnect from the tmux session (while keeping it running), 
-        press Ctrl + b, then release both keys and press d. 
-        This will detach you from the tmux session and leave your script running.
+                press Ctrl + b, then release both keys and press d. 
+                This will detach you from the tmux session and leave your script running.
 
         To reattach to your screen session and see the running output, use: ### Connect again
                 tmux ls   ### Check terminal list
                 tmux attach -t botSesssion
                 exit # To terminate the terminal 
+
+---to check folder size---
+        du -sh .   

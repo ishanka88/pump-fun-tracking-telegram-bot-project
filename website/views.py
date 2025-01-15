@@ -1,5 +1,5 @@
 from flask import Blueprint
-from telegram_bot.telegram_utils import send_telegram_message_to_bot
+from telegram_bot.telegram_utils import send_telegram_message_to_admin
 from website.models import TrackingTokenNames
 import asyncio
 import json

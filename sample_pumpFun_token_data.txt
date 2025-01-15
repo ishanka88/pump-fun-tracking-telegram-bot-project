@@ -1,0 +1,34 @@
+
+{
+'signature': 'n8atF67vf4zSZFWBxStFLCmFCyYmudbLayRoZ9o64iKcAtUdVA9SuiyDsx3stDbfWjV6yLSrcMDPWKAJ1Pf92ux', 
+'mint': 'GwTBcQrkDNQLMgmsTk9d2eWnSCV4TFDkhULQ9KUHpump', 
+'traderPublicKey': 'Br5NmHNVtejoJzUuvbyQF5wNPds17g9sR7ThGQj7GuKG', 
+'txType': 'create', 
+'initialBuy': 54329113.92405, 
+'solAmount': 1.6, 
+'bondingCurveKey': '8uBPMbLZQLXhRixaMz2hZue2Dd18TRKJtGDerp125gwZ', 
+'vTokensInBondingCurve': 1018670886.07595, 
+'vSolInBondingCurve': 31.59999999999998, 
+'marketCapSol': 31.0208139173656, 
+'name': 'Little Red Book official mascot', 
+'symbol': 'ᵐᵒ', 
+'uri': 'https://ipfs.io/ipfs/QmWDr3tbyhFwu7QVRg5kZSiNW7RDf1PviXTpnMZLxHgKKB', 
+'pool': 'pump'
+}
+
+{
+'signature': '3qwG7Qp7rnZGQWnaWxuTaX5Zv2Gtsffw16PXEMmAcE9wFK6MgoA2K2pbVKWykefdoPjP7ypAsKie66Cc7tkPDFrP', 
+'mint': '4f3PxpmiBV6w5hEjRmoP97Lw9oTGkzrfgnUP3UVypump', 
+'traderPublicKey': '3eJJ76ChmDR3nyapHZ5Zk8wG43QetbpAsCTNqygv7exX', 
+'txType': 'create', 
+'initialBuy': 50000000, 
+'solAmount': 1.46627566, 
+'bondingCurveKey': '9Ms9NL4fL8H1dsTJaj4tmoXq2PxmgGS51PcwkueiYzUS', 
+'vTokensInBondingCurve': 1023000000, 
+'vSolInBondingCurve': 31.466275659824046, 
+'marketCapSol': 30.758822736875903, 
+'name': 'one chinese noodle', 
+'symbol': '〰〰〰', 
+'uri': 'https://ipfs.io/ipfs/QmaMPEwUoNQmcvfbDKvGh9Q28Z6wopg7yrKifNDjRvTnTR', 
+'pool': 'pump'
+}
