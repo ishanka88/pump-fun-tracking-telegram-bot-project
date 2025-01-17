@@ -410,7 +410,6 @@ async def set_genuine_token_display_count(update: Update, context: CallbackConte
 
             # If it's a number, set the duplicate_count
             Config.GENUINE_TOKEN_DISPLAY_COUNT = int(entered_value)
-            print(Config.GENUINE_TOKEN_DISPLAY_COUNT)
             send_telegram_message_to_admin(f"Genuine Tokens Display count has been set to {Config.GENUINE_TOKEN_DISPLAY_COUNT}.", parse_mode='Markdown')
         
     except Exception as e:
