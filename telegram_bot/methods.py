@@ -20,6 +20,26 @@ from datetime import datetime
 import hashlib
 
 
+def get_current_sol_value():
+    try:
+        # Define the CoinGecko API URL for fetching Solana price
+        url = "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd"
+
+        # Send GET request to the API
+        response = requests.get(url)
+
+        # Parse the response JSON
+        data = response.json()
+
+        # Extract the current price of SOL in USD
+        sol_price = data["solana"]["usd"]
+        Config.CURRENT_SOL_VALUE = sol_price
+        return Config.CURRENT_SOL_VALUE
+        print(f"The current price of Solana (SOL) is: ${sol_price}")
+    except requests.RequestException as e:
+        print(f"An error occurred get_current_sol_value: {e}")
+        logging.exception("An error occurred get_current_sol_value : %s", str(e))
+        return Config.CURRENT_SOL_VALUE
 
 ################################################
 def get_ipfs_metadata(ipfs_url):
@@ -193,22 +213,92 @@ async def check_token_name_available_in_the_list_and_send_telegram_message (toke
                     match_percentage_token_name = get_match_percentage(name, token_name)
                     match_percentage_token_symbol = get_match_percentage(name, token_symbol)
 
-                    data_array = get_ipfs_metadata(url_link)
-                    image_url = data_array.get("image", "") if data_array else ""
-                    twitter_url = data_array.get("twitter", "") if data_array else ""
-                    website_url = data_array.get("website", "") if data_array else ""
+                    meta_data = get_ipfs_metadata(url_link)
+
+                    image_link = meta_data.get("image", None) if meta_data else None
+                    if image_link:
+                        new_image_url= image_link
+                    else:
+                        new_image_url = f"https://pump.fun/coin/{contract_address}"
+                        
+                    twitter_url = meta_data.get("twitter", None) if meta_data else None
+
+                    if twitter_url :
+                        return
+                        # twitter_url_string = f" [🐦]({twitter_url})Twitter"
+
+                    # Using escape_markdown with None values now handled properly
+                    website_url = meta_data.get("website", None) if meta_data else None
+                    telegram_url = meta_data.get("telegram", None) if meta_data else None
+
+                    website_url_string =""
+                    telegram_url_string =""
+
+                    if website_url :
+                        website_url_string = f" [🌐]({website_url}) Website" 
+
+                    if telegram_url :
+                        telegram_url_string = f" [📱]({telegram_url})Telegram" 
 
                     empty_message = "\n⭕\n"
                     send_telegram_message_to_admin(empty_message, parse_mode='Markdown')
 
                     message = f"""
-                    [🚨]({image_url}) *{name}* 🚨\n\n`{token_name}` (`{token_symbol}`)\n\nName    - {match_percentage_token_name} %\nSymbol - {match_percentage_token_symbol} %\n\n📝 Contract Address: [🔍](https://solscan.io/token/{contract_address})\n`{contract_address}`\n\n🙋‍♂️ Deployer: [🔗](https://solscan.io/account/{developer})\n{developer}\n\nSolscan: [🔍](https://solscan.io/token/{contract_address})     PumpFun: [💊](https://pump.fun/coin/{contract_address})
-                    \nTwitter: [🐦]({twitter_url})     Website: [🌐]({website_url})  
+                    [🚨]({new_image_url}) *{name}* 🚨\n\n`{token_name}` (`{token_symbol}`)\n\nName    - {match_percentage_token_name} %\nSymbol - {match_percentage_token_symbol} %\n\n📝 Contract Address: [🔍](https://solscan.io/token/{contract_address})\n`{contract_address}`\n\n🙋‍♂️ Deployer: [🔗](https://solscan.io/account/{developer})\n{developer}\n\n[🔍](https://solscan.io/token/{contract_address}) Solscan     [💊](https://pump.fun/coin/{contract_address}) PumpFun
+                    \n{website_url_string}    {telegram_url_string}
+                    \n🐦 *NO TWITTER ADDED* 🐦"
                     """
                     send_telegram_message_to_admin(message, parse_mode='Markdown')
 
     except Exception as e:
         logging.error(f"Error checking tokens and sending message: {e}")
+
+# async def check_token_name_available_in_the_list_and_send_telegram_message (token_name,token_symbol,contract_address,developer,url_link):
+
+#     try:
+#         async with semaphore:
+#             for name in Config.TOKEN_NAMES_LIST:
+#                 if name.lower() in token_name.lower() or name.lower() in token_symbol.lower():
+#                     match_percentage_token_name = get_match_percentage(name, token_name)
+#                     match_percentage_token_symbol = get_match_percentage(name, token_symbol)
+
+#                     meta_data = get_ipfs_metadata(url_link)
+
+#                     image_link = meta_data.get("image", None) if meta_data else None
+#                     if image_link:
+#                         new_image_url= image_link
+#                     else:
+#                         new_image_url = f"https://pump.fun/coin/{contract_address}"
+                        
+#                     # Using escape_markdown with None values now handled properly
+#                     website_url = meta_data.get("website", None) if meta_data else None
+#                     telegram_url = meta_data.get("telegram", None) if meta_data else None
+#                     twitter_url = meta_data.get("twitter", None) if meta_data else None
+
+#                     website_url_string =""
+#                     telegram_url_string =""
+#                     twitter_url_string=""
+
+#                     if website_url :
+#                         website_url_string = f" [🌐]({website_url}) Website" 
+
+#                     if telegram_url :
+#                         telegram_url_string = f" [📱]({telegram_url})Telegram" 
+
+#                     if twitter_url :
+#                         twitter_url_string = f" [🐦]({twitter_url})Twitter"
+
+#                     empty_message = "\n⭕\n"
+#                     send_telegram_message_to_admin(empty_message, parse_mode='Markdown')
+
+#                     message = f"""
+#                     [🚨]({new_image_url}) *{name}* 🚨\n\n`{token_name}` (`{token_symbol}`)\n\nName    - {match_percentage_token_name} %\nSymbol - {match_percentage_token_symbol} %\n\n📝 Contract Address: [🔍](https://solscan.io/token/{contract_address})\n`{contract_address}`\n\n🙋‍♂️ Deployer: [🔗](https://solscan.io/account/{developer})\n{developer}\n\n[🔍](https://solscan.io/token/{contract_address}) Solscan     [💊](https://pump.fun/coin/{contract_address}) PumpFun
+#                     \n{twitter_url_string}     {website_url_string}    {telegram_url_string}
+#                     """
+#                     send_telegram_message_to_admin(message, parse_mode='Markdown')
+
+#     except Exception as e:
+#         logging.error(f"Error checking tokens and sending message: {e}")
 
 
 #####################################################################################

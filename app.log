@@ -4133,3 +4133,632 @@ Traceback (most recent call last):
   File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 328, in _request_wrapper
     raise BadRequest(message)
 telegram.error.BadRequest: Message to edit not found
+2025-01-17 18:31:25,391 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:31:28,702 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:31:28,968 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:31:38,329 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:31:40,461 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:31:40,729 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:31:41,407 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:32:03,974 - ERROR - Error subscribing to WebSocket: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1314, in close_connection
+    await self.transfer_data_task
+  File "/usr/lib/python3.12/asyncio/futures.py", line 287, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/usr/lib/python3.12/asyncio/futures.py", line 198, in result
+    raise exc
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 968, in transfer_data
+    message = await self.read_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1038, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1113, in read_data_frame
+    frame = await self.read_frame(max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1170, in read_frame
+    frame = await Frame.read(
+            ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/framing.py", line 69, in read
+    data = await reader(2)
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "/usr/lib/python3.12/asyncio/streams.py", line 545, in _wait_for_data
+    await self._waiter
+  File "/usr/lib/python3.12/asyncio/futures.py", line 287, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/usr/lib/python3.12/asyncio/futures.py", line 198, in result
+    raise exc
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 68, in subscribe_to_tokens
+    async for message in websocket:
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 497, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 953, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+2025-01-17 18:35:17,928 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:35:24,900 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:35:25,704 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:35:34,812 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:35:35,158 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:35:43,335 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:35:43,669 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:35:44,947 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:35:45,569 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:36:02,349 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:36:05,161 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:36:05,472 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:36:26,396 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:36:42,436 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:31,106 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:35,827 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:36,283 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:37,048 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:37,471 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:55,494 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:55,828 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:57,120 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:57,626 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:57,898 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:58,329 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:37:58,717 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:38:23,693 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 9","parameters":{"retry_after":9}}
+2025-01-17 18:38:46,601 - ERROR - Error subscribing to WebSocket: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 968, in transfer_data
+    message = await self.read_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1038, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1113, in read_data_frame
+    frame = await self.read_frame(max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1170, in read_frame
+    frame = await Frame.read(
+            ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/framing.py", line 69, in read
+    data = await reader(2)
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 2 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 68, in subscribe_to_tokens
+    async for message in websocket:
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 497, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+2025-01-17 18:41:19,919 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:25,760 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:26,924 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:28,224 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:28,890 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:48,149 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:48,840 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:50,516 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:51,432 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:51,830 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:52,196 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:41:53,110 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:42:33,142 - ERROR - Error subscribing to WebSocket: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 968, in transfer_data
+    message = await self.read_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1038, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1113, in read_data_frame
+    frame = await self.read_frame(max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 1170, in read_frame
+    frame = await Frame.read(
+            ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/framing.py", line 69, in read
+    data = await reader(2)
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 2 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 68, in subscribe_to_tokens
+    async for message in websocket:
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 497, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/websockets/legacy/protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+2025-01-17 18:43:10,025 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 18:54:10,814 - ERROR - Error : set_genuine_token_display_count method'MemeCoins' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 436, in check_contract_address
+    id = coin["id"]
+         ~~~~^^^^^^
+TypeError: 'MemeCoins' object is not subscriptable
+2025-01-17 19:24:52,310 - ERROR - Error : check_contract_address methodunsupported operand type(s) for *: 'float' and 'function'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 475, in check_contract_address
+    \n💰 *MC* : {f"{round(market_cap_sol*sol_usd_value,2):,}"} *SOL*
+                          ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for *: 'float' and 'function'
+2025-01-17 19:28:11,711 - ERROR - Error : check_contract_address methodunsupported operand type(s) for *: 'float' and 'function'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 466, in check_contract_address
+    market_cap_usd = market_cap_sol *current_sol_value
+                     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for *: 'float' and 'function'
+2025-01-17 19:30:23,416 - ERROR - Error : check_contract_address methodname 'market_cap_usd' is not defined
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 476, in check_contract_address
+    \n💰 *MC* : {f"{round(market_cap_usd,2):,}"} *SOL*
+                          ^^^^^^^^^^^^^^
+NameError: name 'market_cap_usd' is not defined. Did you mean: 'market_cap_sol'?
+2025-01-17 19:43:48,840 - ERROR - Error while getting Updates: httpx HTTPError: 
+2025-01-17 19:43:48,841 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 34, in read
+    return await self._stream.receive(max_bytes=max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/streams/tls.py", line 204, in receive
+    data = await self._call_sslobject_method(self._ssl_object.read, max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/streams/tls.py", line 147, in _call_sslobject_method
+    data = await self.transport_stream.receive()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1300, in receive
+    raise self._protocol.exception from None
+anyio.BrokenResourceError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 253, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 237, in handle_async_request
+    response = await connection.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 90, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 112, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 91, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 155, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 191, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 31, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc)
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 183, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1533, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1620, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1648, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1685, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1722, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 352, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_updater.py", line 600, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_updater.py", line 327, in polling_action_cb
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_updater.py", line 312, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 524, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 334, in decorator
+    result = await func(*args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 3584, in get_updates
+    await self._post(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 422, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 306, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 453, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 165, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 288, in _request_wrapper
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 274, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 204, in do_request
+    raise NetworkError(f"httpx HTTPError: {err}") from err
+telegram.error.NetworkError: httpx HTTPError: 
+2025-01-17 19:54:51,493 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:54:51,885 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:54:58,067 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:54:58,606 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:54:59,118 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:54:59,593 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:08,181 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:11,741 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:12,718 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:13,183 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:21,851 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:22,701 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:23,120 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:23,549 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:23,971 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:24,408 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:28,460 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 25","parameters":{"retry_after":25}}
+2025-01-17 19:55:29,340 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 24","parameters":{"retry_after":24}}
+2025-01-17 19:55:29,844 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:30,311 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:30,739 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:31,145 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:32,891 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 21","parameters":{"retry_after":21}}
+2025-01-17 19:55:33,761 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 20","parameters":{"retry_after":20}}
+2025-01-17 19:55:34,144 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:34,755 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:35,143 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-01-17 19:55:36,251 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 17","parameters":{"retry_after":17}}
+2025-01-17 19:55:37,139 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 17","parameters":{"retry_after":17}}
+2025-01-17 19:55:38,401 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 15","parameters":{"retry_after":15}}
+2025-01-17 19:55:39,402 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 14","parameters":{"retry_after":14}}
+2025-01-17 19:55:40,531 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 13","parameters":{"retry_after":13}}
+2025-01-17 19:55:41,368 - ERROR - Failed to send message to chat_id -004607352219, Error: 429, {"ok":false,"error_code":429,"description":"Too Many Requests: retry after 12","parameters":{"retry_after":12}}
+2025-01-17 19:55:51,552 - ERROR - Error checking token availability: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.

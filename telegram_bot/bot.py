@@ -5,9 +5,9 @@ import json
 import sys
 import time
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, CallbackQueryHandler, CallbackContext
+from telegram.ext import Application, CommandHandler, CallbackQueryHandler, CallbackContext,MessageHandler, MessageHandler, filters,Updater
 from telegram_bot.telegram_utils import send_telegram_message_to_admin,send_telegram_message_to_users,delete_message
-from website.models import TrackingTokenNames,FakeTwitterAccounts,MessageIdBasedOnTwitter
+from website.models import TrackingTokenNames,FakeTwitterAccounts,MessageIdBasedOnTwitter,MemeCoins
 from telegram_bot  import methods
 from config import Config
 
@@ -185,7 +185,7 @@ async def add_name(update: Update, context: CallbackContext):
             send_telegram_message_to_admin("*Please provide a token name to add to the list as* `/add_name` name.", parse_mode='Markdown')
             return
 
-        token_name = context.args[0]
+        token_name = " ".join(context.args)
         
         if token_name in Config.TOKEN_NAMES_LIST:
             send_telegram_message_to_admin(f"The token name '{token_name}' is already in the list.")
@@ -396,27 +396,91 @@ async def set_genuine_token_display_count(update: Update, context: CallbackConte
         user_id = str(update.message.from_user.id)
         group_id = str(update.message.chat.id)
 
-        if user_id == Config.ADMIN_ID and group_id==Config.ADMIN_ID:
-            return
-        if len(context.args) == 0:
-            send_telegram_message_to_admin("*Please provide a number as this* `/set_genuine_display_count` number.", parse_mode='Markdown')
-            return
+        if user_id == Config.ADMIN_ID and group_id==Config.ADMIN_ID:        
+            if len(context.args) == 0:
+                send_telegram_message_to_admin("*Please provide a number as this* `/set_genuine_display_count` number.", parse_mode='Markdown')
+                return
 
-        entered_value = context.args[0]
+            entered_value = context.args[0]
 
-        # Check if entered value is a valid number
-        if not entered_value.isdigit():  # Checks if it's a whole number (non-negative)
-            send_telegram_message_to_admin(f"'{entered_value}' is not a valid number. Please provide a valid number with the comand.", parse_mode='Markdown')
-            return
+            # Check if entered value is a valid number
+            if not entered_value.isdigit():  # Checks if it's a whole number (non-negative)
+                send_telegram_message_to_admin(f"'{entered_value}' is not a valid number. Please provide a valid number with the comand.", parse_mode='Markdown')
+                return
 
-        # If it's a number, set the duplicate_count
-        Config.GENUINE_TOKEN_DISPLAY_COUNT = int(entered_value)
-        print(Config.GENUINE_TOKEN_DISPLAY_COUNT)
-        send_telegram_message_to_admin(f"Genuine Tokens Display count has been set to {Config.GENUINE_TOKEN_DISPLAY_COUNT}.", parse_mode='Markdown')
-    
+            # If it's a number, set the duplicate_count
+            Config.GENUINE_TOKEN_DISPLAY_COUNT = int(entered_value)
+            print(Config.GENUINE_TOKEN_DISPLAY_COUNT)
+            send_telegram_message_to_admin(f"Genuine Tokens Display count has been set to {Config.GENUINE_TOKEN_DISPLAY_COUNT}.", parse_mode='Markdown')
+        
     except Exception as e:
         logging.exception(f"Error : set_genuine_token_display_count method{e}")
         print(f"Error : set_genuine_token_display_count Method {e}")
+
+
+# /set_genuine_token_display_count command
+async def check_contract_address(update: Update, context: CallbackContext):
+    try:
+        user_id = str(update.message.from_user.id)
+        group_id = str(update.message.chat.id)
+
+        if user_id == Config.ADMIN_ID and group_id==Config.ADMIN_ID:
+            contract_address = update.message.text
+            #print(len(contract_address))
+
+            if len(contract_address) == 44:
+                coin = MemeCoins.get_tokens_by_contract_address(contract_address)
+
+            if coin:
+                # Unpack result into individual variables
+                id = coin.id
+                created_at = coin.created_at
+                signature = coin.signature
+                token_name = coin.token_name
+                token_ticker = coin.token_ticker
+                dev_address = coin.dev_address
+                initial_buy = coin.initial_buy
+                sol_amount = coin.sol_amount
+                bonding_curve_key = coin.bonding_curve_key
+                v_tokens_in_bonding_curve = coin.v_tokens_in_bonding_curve
+                v_sol_in_bonding_curve = coin.v_sol_in_bonding_curve
+                market_cap_sol = coin.market_cap_sol
+                metadata_link = coin.metadata_link
+                twitter_link = coin.twitter_link
+
+
+                meta_data = methods.get_ipfs_metadata(metadata_link)
+
+                image_link = meta_data.get("image", None) if meta_data else None
+                if image_link:
+                    new_image_url= image_link
+                else:
+                    new_image_url = f"https://pump.fun/coin/{contract_address}"
+                
+                twitter_url_string ="\n\n🐦 *NO TWITTER ADDED* 🐦"
+                if twitter_link !="no":
+                    twitter_user_name_string= f"{methods.escape_markdown(twitter_link.split('/')[-1])}"
+                    twitter_url_string=f"[🐦]({twitter_link}) - @{twitter_user_name_string}"
+
+                current_sol_value =methods.get_current_sol_value() 
+                market_cap_in_usd = market_cap_sol *current_sol_value
+
+                message = f"""
+                [🚨]({new_image_url}) Available 🚨\n\n`{token_name}` (`{token_ticker}`)\n\n{contract_address}\n\n[💊](https://pump.fun/coin/{contract_address}) [🙋‍♂️](https://solscan.io/account/{dev_address}) [🔍](https://solscan.io/token/{contract_address}) {twitter_url_string}
+                \n-----------------------------------------
+                \n🕒 *Created At* : {methods.time_since_added(created_at)}
+                \n🪙 *Initial Buy* : {f"{round(initial_buy,0):,}"}
+                \n💵 *SOL amount* : {f"{round(sol_amount,2):,}"} *SOL*
+                \n🏦 *Tokens InCurve* : {f"{round(v_tokens_in_bonding_curve,2):,}"}
+                \n🏦 *SOL InCurve*: {f"{round(v_sol_in_bonding_curve,2):,}"}
+                \n💰 *MC* : {f"{round(market_cap_in_usd,2):,}"} *USD* ({round(market_cap_sol,2):,} *SOL*)
+                \n-----------------------------------------
+                """
+                send_telegram_message_to_admin(message, parse_mode='Markdown')
+
+    except Exception as e:
+        logging.exception(f"Error : check_contract_address method{e}")
+        print(f"Error : check_contract_address Method {e}")
 
 
 
@@ -485,6 +549,10 @@ async def run_telegram_bot():
     application.add_handler(CommandHandler("check_genuine_display_count", check_genuine_token_display_count))
     application.add_handler(CommandHandler("set_genuine_display_count", set_genuine_token_display_count))
     application.add_handler(CommandHandler("add_fake_twitter", block_fake_twitter))
+
+    # Add a handler that will react only to text messages (excluding commands)
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, check_contract_address))
+
 
     # Register callback handlers
     application.add_handler(CallbackQueryHandler(yes_no_button, pattern="^delete_|^block_"))

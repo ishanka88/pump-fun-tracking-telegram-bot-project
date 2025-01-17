@@ -360,6 +360,23 @@ class MemeCoins(db.Model):
         except Exception as e:
             return jsonify({"message": f"Error occurred while fetching tokens: {str(e)}"}), 500
 
+
+
+    def get_tokens_by_contract_address(contract_address):
+        try:
+            with app.app_context():
+            # Query the database for all tokens with the same token_name
+                meme_coin = MemeCoins.query.filter_by(contract_address=contract_address).first()
+
+                # If no tokens are found with that name, return a message
+                if not meme_coin:
+                    return []
+            
+                return meme_coin
+
+        except Exception as e:
+            return jsonify({"message": f"Error occurred while fetching tokmeme coin: {str(e)}"}), 500
+
     def get_tokens_by_ticker(token_ticker):
         try:
             with app.app_context():
