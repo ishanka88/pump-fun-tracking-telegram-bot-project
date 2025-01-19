@@ -442,8 +442,10 @@ async def check_mc_limit(update: Update, context: CallbackContext):
     user_id = str(update.message.from_user.id)
     group_id = str(update.message.chat.id)
 
-    if user_id == Config.ADMIN_ID and group_id==Config.ADMIN_ID:  
-        await update.message.reply_text(f"*Market Cap(MC) limit is {"{:,}".format(Config.MARKETCAP_LIMIT)}*", parse_mode='Markdown')
+    if user_id == Config.ADMIN_ID and group_id==Config.ADMIN_ID: 
+        market_cap_limit = "{:,}".format(Config.MARKETCAP_LIMIT)
+        await update.message.reply_text(f"*Market Cap(MC) limit is {market_cap_limit}*", parse_mode='Markdown')
+
 
 
 # /set_genuine_token_display_count command
