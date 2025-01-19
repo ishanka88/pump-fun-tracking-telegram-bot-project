@@ -7,6 +7,8 @@ from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.sql import func
 import logging
+from sqlalchemy import or_
+
 
 # Initialize Flask app and SQLAlchemy
 app = Flask(__name__)
@@ -306,8 +308,8 @@ class MemeCoins(db.Model):
             with app.app_context():
                 # Create a new MemeCoins instance
                 new_token = MemeCoins(
-                    token_name=token_name,
-                    token_ticker=token_ticker,
+                    token_name=token_name.lower(),
+                    token_ticker=token_ticker.lower(),
                     contract_address=contract_address,
                     dev_address=dev_address,
                     metadata_link=metadata_link,
@@ -488,25 +490,22 @@ class MemeCoins(db.Model):
             return jsonify({"message": f"Error occurred while deleting token: {str(e)}"}), 500
         
 
-    def check_token_availability(token_name, token_ticker, duplicate_count=1):
+    def check_token_availability(token_name, token_ticker):
         try:
             with app.app_context():
                 # Check how many tokens have the same token_ticker in the database
-                existing_token_ticker_count = MemeCoins.query.filter_by(token_ticker=token_ticker).count()
-                if existing_token_ticker_count >= duplicate_count:
-                    return True, token_ticker, True  # Duplicate count met for ticker
+                existing_tokens = MemeCoins.query.filter(or_(
+                        MemeCoins.token_ticker == token_ticker,
+                        MemeCoins.token_name == token_name
+                    )
+                ).distinct().all()
 
-                # Check how many tokens have the same token_name in the database
-                existing_token_name_count = MemeCoins.query.filter_by(token_name=token_name).count()
-                if existing_token_name_count >= duplicate_count:
-                    return True, token_name, False  # Duplicate count met for name
-
-                # If neither token name nor ticker meets the duplicate count, it's available
-                return False, "Not Exist"
+                return existing_tokens
 
         except Exception as e:
             logging.exception(f"Error occurred while checking token availability: {str(e)}")
-            return False, "Error - while checking token availability"
+            print(f"Error occurred while checking token availability: {str(e)}")
+            return []
 
     def check_token_availability_from_twitter(twitter, duplicate_count=1):
         try:

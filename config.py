@@ -13,5 +13,8 @@ class Config:
     #variables
     DEFAULT_MULTIPLICITY_VALUE = 4
     GENUINE_TOKEN_DISPLAY_COUNT = 5
+    MARKETCAP_LIMIT = 20000
     TOKEN_NAMES_LIST = None
     
+    # Sol Vakue in usd
+    CURRENT_SOL_VALUE = 180

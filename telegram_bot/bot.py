@@ -28,7 +28,7 @@ async def start(update: Update, context: CallbackContext):
     group_id = str(update.message.chat.id)
     
     if user_id == Config.ADMIN_ID and group_id==Config.ADMIN_ID:
-        await update.message.reply_text(f'Welcome to the Token Bot! \n\nThese are the commands :\n\n/start\n/terminate\n/subscribe\n/unsubscribe\n/status\n/add_name\n/name_list\n/check_duplicate_count\n/set_duplicate_count\n/check_genuine_display_count\n/set_genuine_display_count')
+        await update.message.reply_text(f'Welcome to the Token Bot! \n\nThese are the commands :\n\n/start\n/terminate\n/subscribe\n/unsubscribe\n/status\n/add_name\n/name_list\n/check_duplicate_count\n/set_duplicate_count\n/check_genuine_display_count\n/set_genuine_display_count\n/check_mc_limit\n/set_mc_limit')
     else:
         
         await update.message.reply_text(f'Welcome to the Token Bot! \n\nThese are the commands :\n\n/start\n/status\n/check_duplicate_count\n/check_genuine_display_count')
@@ -90,11 +90,14 @@ async def subscribe(update: Update, context: CallbackContext):
                                         ,initial_buy, sol_amount, bonding_curve_key, v_tokens_in_bonding_curve
                                             ,v_sol_in_bonding_curve, market_cap_sol, signature))
                             
-                            # Check same token availability from name and symbol
-                            asyncio.create_task(methods.check_same_token_availability_in_database(token_name, token_ticker,contract_address))
+                            # # Check same token availability from name and symbol
+                            # asyncio.create_task(methods.check_same_token_availability_in_database(token_name, token_ticker,contract_address))
 
                             #check token vailable in the checking list and if available send a telegram message 
                             asyncio.create_task(methods.check_token_name_available_in_the_list_and_send_telegram_message(token_name,token_ticker,contract_address,dev_address, metadata_link))
+
+                            asyncio.create_task(methods.check_marketcap_is_grater_than_the_limit_and_send_telegrm_message(contract_address,market_cap_sol))
+
 
                             count += 1
                             if count % 100 == 0:
@@ -177,26 +180,33 @@ async def status(update: Update, context: CallbackContext):
 
 # /add_name command
 async def add_name(update: Update, context: CallbackContext):
-    user_id = str(update.message.from_user.id)
-    group_id = str(update.message.chat.id)
+    try:
+        user_id = str(update.message.from_user.id)
+        group_id = str(update.message.chat.id)
 
-    if user_id == Config.ADMIN_ID and group_id==Config.ADMIN_ID:  
-        if len(context.args) == 0:
-            send_telegram_message_to_admin("*Please provide a token name to add to the list as* `/add_name` name.", parse_mode='Markdown')
-            return
+        if user_id == Config.ADMIN_ID and group_id==Config.ADMIN_ID:  
+            if len(context.args) == 0:
+                send_telegram_message_to_admin("*Please provide a token name to add to the list as* `/add_name` name.", parse_mode='Markdown')
+                return
 
-        token_name = " ".join(context.args)
-        
-        if token_name in Config.TOKEN_NAMES_LIST:
-            send_telegram_message_to_admin(f"The token name '{token_name}' is already in the list.")
-            return
-        add_status = TrackingTokenNames.add_token(token_name)
-        if add_status:
-            send_telegram_message_to_admin(f"Token name '{token_name}' added to the list.")
-            Config.TOKEN_NAMES_LIST = TrackingTokenNames.get_all_tokens()
-        else:
-            send_telegram_message_to_admin(f"Error - Adding Token name '{token_name}' in to the list.")
-
+            token_name = " ".join(context.args)
+            
+            if token_name in Config.TOKEN_NAMES_LIST:
+                send_telegram_message_to_admin(f"The token name '{token_name}' is already in the list.")
+                return
+            add_status = TrackingTokenNames.add_token(token_name)
+            if add_status:
+                send_telegram_message_to_admin(f"Token name '{token_name}' added to the list.")
+                Config.TOKEN_NAMES_LIST = TrackingTokenNames.get_all_tokens()
+                already_available_tokens= MemeCoins.check_token_availability(token_name,token_name)
+                if already_available_tokens:
+                    methods.send_telegram_message_if_given_token_name_available_in_database(already_available_tokens, token_name)
+                
+            else:
+                send_telegram_message_to_admin(f"Error - Adding Token name '{token_name}' in to the list.")
+    except Exception as e:
+        logging.exception(f"Error : add_name {e}")
+        print(f"Error : add_name {e}")
 
 # Delete token after confirmation
 async def delete_token(update: Update, context: CallbackContext):
@@ -239,10 +249,20 @@ async def check_name_list(update: Update, context: CallbackContext):
             if len(token_names) == 0:
                 await update.message.reply_text("The list of token names is currently empty.")
                 return
+            
+            # Create the keyboard in one go
+            keyboard = [token_names[i:i+3] for i in range(0, len(token_names), 3)]
 
+            # Convert token names into InlineKeyboardButtons
             keyboard = [
-                [InlineKeyboardButton(name, callback_data=f"delete_{name}") for name in token_names]
+                [InlineKeyboardButton(name, callback_data=f"delete_{name}") for name in line]
+                for line in keyboard
             ]
+
+                
+            # keyboard = [
+            #     [InlineKeyboardButton(name, callback_data=f"delete_{name}") for name in token_names]
+            # ]
             reply_markup = InlineKeyboardMarkup(keyboard)
             await update.message.reply_text("Here is the list of token names. Click on a token to delete it:", reply_markup=reply_markup)
     except Exception as e:
@@ -417,6 +437,43 @@ async def set_genuine_token_display_count(update: Update, context: CallbackConte
         print(f"Error : set_genuine_token_display_count Method {e}")
 
 
+# /check_genuine_token_display_count command
+async def check_mc_limit(update: Update, context: CallbackContext):
+    user_id = str(update.message.from_user.id)
+    group_id = str(update.message.chat.id)
+
+    if user_id == Config.ADMIN_ID and group_id==Config.ADMIN_ID:  
+        await update.message.reply_text(f"*Market Cap(MC) limit is {"{:,}".format(Config.MARKETCAP_LIMIT)}*", parse_mode='Markdown')
+
+
+# /set_genuine_token_display_count command
+async def set_mc_limit(update: Update, context: CallbackContext):
+    try:
+        user_id = str(update.message.from_user.id)
+        group_id = str(update.message.chat.id)
+
+        if user_id == Config.ADMIN_ID and group_id==Config.ADMIN_ID:        
+            if len(context.args) == 0:
+                send_telegram_message_to_admin("*Please provide a number as this* `/set_mc_limit` number.", parse_mode='Markdown')
+                return
+
+            entered_value = context.args[0]
+
+            # Check if entered value is a valid number
+            if not entered_value.isdigit():  # Checks if it's a whole number (non-negative)
+                send_telegram_message_to_admin(f"'{entered_value}' is not a valid number. Please provide a valid number with the comand.", parse_mode='Markdown')
+                return
+
+            # If it's a number, set the duplicate_count
+            Config.MARKETCAP_LIMIT = int(entered_value)
+            send_telegram_message_to_admin(f"Tracking MarketCap value has been set to {Config.MARKETCAP_LIMIT}.", parse_mode='Markdown')
+        
+    except Exception as e:
+        logging.exception(f"Error : set_genuine_token_display_count method{e}")
+        print(f"Error : set_genuine_token_display_count Method {e}")
+
+
+
 # /set_genuine_token_display_count command
 async def check_contract_address(update: Update, context: CallbackContext):
     try:
@@ -430,56 +487,56 @@ async def check_contract_address(update: Update, context: CallbackContext):
             if len(contract_address) == 44:
                 coin = MemeCoins.get_tokens_by_contract_address(contract_address)
 
-            if coin:
-                # Unpack result into individual variables
-                id = coin.id
-                created_at = coin.created_at
-                signature = coin.signature
-                token_name = coin.token_name
-                token_ticker = coin.token_ticker
-                dev_address = coin.dev_address
-                initial_buy = coin.initial_buy
-                sol_amount = coin.sol_amount
-                bonding_curve_key = coin.bonding_curve_key
-                v_tokens_in_bonding_curve = coin.v_tokens_in_bonding_curve
-                v_sol_in_bonding_curve = coin.v_sol_in_bonding_curve
-                market_cap_sol = coin.market_cap_sol
-                metadata_link = coin.metadata_link
-                twitter_link = coin.twitter_link
+                if coin:
+                    # Unpack result into individual variables
+                    id = coin.id
+                    created_at = coin.created_at
+                    signature = coin.signature
+                    token_name = coin.token_name
+                    token_ticker = coin.token_ticker
+                    dev_address = coin.dev_address
+                    initial_buy = coin.initial_buy
+                    sol_amount = coin.sol_amount
+                    bonding_curve_key = coin.bonding_curve_key
+                    v_tokens_in_bonding_curve = coin.v_tokens_in_bonding_curve
+                    v_sol_in_bonding_curve = coin.v_sol_in_bonding_curve
+                    market_cap_sol = coin.market_cap_sol
+                    metadata_link = coin.metadata_link
+                    twitter_link = coin.twitter_link
 
 
-                meta_data = methods.get_ipfs_metadata(metadata_link)
+                    meta_data = methods.get_ipfs_metadata(metadata_link)
 
-                image_link = meta_data.get("image", None) if meta_data else None
-                if image_link:
-                    new_image_url= image_link
-                else:
-                    new_image_url = f"https://pump.fun/coin/{contract_address}"
-                
-                twitter_url_string ="\n\n🐦 *NO TWITTER ADDED* 🐦"
-                if twitter_link !="no":
-                    twitter_user_name_string= f"{methods.escape_markdown(twitter_link.split('/')[-1])}"
-                    twitter_url_string=f"[🐦]({twitter_link}) - @{twitter_user_name_string}"
+                    image_link = meta_data.get("image", None) if meta_data else None
+                    if image_link:
+                        new_image_url= image_link
+                    else:
+                        new_image_url = f"https://pump.fun/coin/{contract_address}"
+                    
+                    twitter_url_string ="\n\n🐦 *NO TWITTER ADDED* 🐦"
+                    if twitter_link !="no":
+                        twitter_user_name_string= f"{methods.escape_markdown(twitter_link.split('/')[-1])}"
+                        twitter_url_string=f"[🐦]({twitter_link}) - @{twitter_user_name_string}"
 
-                current_sol_value =methods.get_current_sol_value() 
-                market_cap_in_usd = market_cap_sol *current_sol_value
+                    current_sol_value =methods.get_current_sol_value() 
+                    market_cap_in_usd = market_cap_sol *current_sol_value
 
-                message = f"""
-                [🚨]({new_image_url}) Available 🚨\n\n`{token_name}` (`{token_ticker}`)\n\n{contract_address}\n\n[💊](https://pump.fun/coin/{contract_address}) [🙋‍♂️](https://solscan.io/account/{dev_address}) [🔍](https://solscan.io/token/{contract_address}) {twitter_url_string}
-                \n-----------------------------------------
-                \n🕒 *Created At* : {methods.time_since_added(created_at)}
-                \n🪙 *Initial Buy* : {f"{round(initial_buy,0):,}"}
-                \n💵 *SOL amount* : {f"{round(sol_amount,2):,}"} *SOL*
-                \n🏦 *Tokens InCurve* : {f"{round(v_tokens_in_bonding_curve,2):,}"}
-                \n🏦 *SOL InCurve*: {f"{round(v_sol_in_bonding_curve,2):,}"}
-                \n💰 *MC* : {f"{round(market_cap_in_usd,2):,}"} *USD* ({round(market_cap_sol,2):,} *SOL*)
-                \n-----------------------------------------
-                """
-                send_telegram_message_to_admin(message, parse_mode='Markdown')
+                    message = f"""
+                    [🚨]({new_image_url}) Available 🚨\n\n`{token_name}` (`{token_ticker}`)\n\n{contract_address}\n\n[💊](https://pump.fun/coin/{contract_address}) [🙋‍♂️](https://solscan.io/account/{dev_address}) [🔍](https://solscan.io/token/{contract_address}) {twitter_url_string}
+                    \n-----------------------------------------
+                    \n🕒 *Created At* : {methods.time_since_added(created_at)}
+                    \n🪙 *Initial Buy* : {f"{round(initial_buy,0):,}"}
+                    \n💵 *SOL amount* : {f"{round(sol_amount,2):,}"} *SOL*
+                    \n🏦 *Tokens InCurve* : {f"{round(v_tokens_in_bonding_curve,2):,}"}
+                    \n🏦 *SOL InCurve*: {f"{round(v_sol_in_bonding_curve,2):,}"}
+                    \n💰 *MC* : {f"{round(market_cap_in_usd,2):,}"} *USD* ({round(market_cap_sol,2):,} *SOL*)
+                    \n-----------------------------------------
+                    """
+                    send_telegram_message_to_admin(message, parse_mode='Markdown')
 
     except Exception as e:
-        logging.exception(f"Error : check_contract_address method{e}")
-        print(f"Error : check_contract_address Method {e}")
+        logging.exception(f"Error : check_contract_address method {e}")
+        print(f"Error : check_contract_address Method :{e}")
 
 
 
@@ -548,6 +605,8 @@ async def run_telegram_bot():
     application.add_handler(CommandHandler("check_genuine_display_count", check_genuine_token_display_count))
     application.add_handler(CommandHandler("set_genuine_display_count", set_genuine_token_display_count))
     application.add_handler(CommandHandler("add_fake_twitter", block_fake_twitter))
+    application.add_handler(CommandHandler("check_mc_limit", check_mc_limit))
+    application.add_handler(CommandHandler("set_mc_limit", set_mc_limit))
 
     # Add a handler that will react only to text messages (excluding commands)
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, check_contract_address))

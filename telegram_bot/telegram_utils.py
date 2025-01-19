@@ -51,7 +51,7 @@ def send_telegram_message_to_users(message, chat_id, parse_mode='HTML', reply_ma
         if response.status_code == 200:
             print(f"Message sent to chat_id {chat_id}")
             message_id = response.json()["result"]["message_id"]
-            return True,message_id
+            return True, message_id
         else:
             # Log detailed error information
             error_message = f"Failed to send message to chat_id {chat_id}, " \

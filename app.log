@@ -4762,3 +4762,965 @@ with app.app_context(). See the documentation for more information.
 This typically means that you attempted to use functionality that needed
 the current application. To solve this, set up an application context
 with app.app_context(). See the documentation for more information.
+2025-01-18 15:03:59,421 - ERROR - Error send_telegram_message_if_found_a_trending_token method: 'MemeCoins' object is not subscriptable
+2025-01-18 15:06:22,166 - ERROR - Error send_telegram_message_if_found_a_trending_token method: 'MemeCoins' object is not subscriptable
+2025-01-18 15:08:07,954 - ERROR - Error send_telegram_message_if_found_a_trending_token method: 'MemeCoins' object is not subscriptable
+2025-01-18 15:11:43,702 - ERROR - Error get_unique_tokens: 'MemeCoins' object is not subscriptable
+2025-01-18 15:11:43,702 - ERROR - Error send_telegram_message_if_found_a_trending_token method: cannot access local variable 'new_image_url' where it is not associated with a value
+2025-01-19 15:06:05,417 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_application.py", line 1063, in process_update
+    await coroutine
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 437, in check_mc_limit
+    await update.message.reply_text(f"*Market Cap(MC) limit is {Config.MARKETCAP_LIMIT}*", parse_mode='Markdown')
+                                                                ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Config' has no attribute 'MARKETCAP_LIMIT'
+2025-01-19 15:06:15,562 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_application.py", line 1063, in process_update
+    await coroutine
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 437, in check_mc_limit
+    await update.message.reply_text(f"*Market Cap(MC) limit is {Config.MARKETCAP_LIMIT}*", parse_mode='Markdown')
+                                                                ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Config' has no attribute 'MARKETCAP_LIMIT'
+2025-01-19 15:07:20,371 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_application.py", line 1063, in process_update
+    await coroutine
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 439, in check_mc_limit
+    await update.message.reply_text(f"*Market Cap(MC) limit is {Config.MARKETCAP_LIMIT}*", parse_mode='Markdown')
+                                                                ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Config' has no attribute 'MARKETCAP_LIMIT'
+2025-01-19 15:13:42,984 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:13:43,906 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:13:44,830 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:13:51,945 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:16:12,436 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:16:18,026 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:21:20,811 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message methodname 'reply_markup' is not defined
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 574, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    main_response = send_telegram_message_to_users(main_message, groupId, parse_mode='Markdown', reply_markup=reply_markup)
+                                                                                                              ^^^^^^^^^^^^
+NameError: name 'reply_markup' is not defined
+2025-01-19 15:21:23,036 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message methodname 'reply_markup' is not defined
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 574, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    main_response = send_telegram_message_to_users(main_message, groupId, parse_mode='Markdown', reply_markup=reply_markup)
+                                                                                                              ^^^^^^^^^^^^
+NameError: name 'reply_markup' is not defined
+2025-01-19 15:21:28,902 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message methodname 'reply_markup' is not defined
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 574, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    main_response = send_telegram_message_to_users(main_message, groupId, parse_mode='Markdown', reply_markup=reply_markup)
+                                                                                                              ^^^^^^^^^^^^
+NameError: name 'reply_markup' is not defined
+2025-01-19 15:21:56,316 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message methodname 'reply_markup' is not defined
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 574, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    main_response = send_telegram_message_to_users(main_message, groupId, parse_mode='Markdown', reply_markup=reply_markup)
+                                                                                                              ^^^^^^^^^^^^
+NameError: name 'reply_markup' is not defined
+2025-01-19 15:21:58,457 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message methodname 'reply_markup' is not defined
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 574, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    main_response = send_telegram_message_to_users(main_message, groupId, parse_mode='Markdown', reply_markup=reply_markup)
+                                                                                                              ^^^^^^^^^^^^
+NameError: name 'reply_markup' is not defined
+2025-01-19 15:22:00,101 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:22:02,655 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:22:56,040 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:22:57,078 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:22:58,269 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:23:21,514 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:23:22,590 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:23:23,560 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:23:24,382 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:23:25,697 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:25:12,768 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:25:13,690 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:25:14,635 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:25:15,686 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:25:16,578 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:25:17,409 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:25:18,254 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:25:19,098 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:25:20,006 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:06,696 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:07,537 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:08,324 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:09,141 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:10,197 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:11,101 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:11,915 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:13,207 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:14,129 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:19,578 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:21,504 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+    current_sol_value =get_current_sol_value()
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:34:22,939 - ERROR - Error : check_marketcap_is_grater_than_the_limit_and_send_telegrm_message method'solana'
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 515, in check_marketcap_is_grater_than_the_limit_and_send_telegrm_message
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/methods.py", line 35, in get_current_sol_value
+    sol_price = data["solana"]["usd"]
+                ~~~~^^^^^^^^^^
+KeyError: 'solana'
+2025-01-19 15:39:29,634 - ERROR - Error : check_contract_address methodcannot access local variable 'coin' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 481, in check_contract_address
+    if coin:
+       ^^^^
+UnboundLocalError: cannot access local variable 'coin' where it is not associated with a value
+2025-01-19 15:44:27,764 - ERROR - Error send_telegram_message_if_found_a_trending_token method: cannot access local variable 'unique_tokens_count' where it is not associated with a value
+2025-01-19 15:46:27,764 - ERROR - Error send_telegram_message_if_given_token_name_available_in_database method: cannot access local variable 'new_image_url' where it is not associated with a value
+2025-01-19 15:54:41,942 - ERROR - Error while getting Updates: httpx HTTPError: 
+2025-01-19 15:54:41,943 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 78, in start_tls
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 69, in start_tls
+    ssl_stream = await anyio.streams.tls.TLSStream.wrap(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/streams/tls.py", line 132, in wrap
+    await wrapper._call_sslobject_method(ssl_object.do_handshake)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/streams/tls.py", line 147, in _call_sslobject_method
+    data = await self.transport_stream.receive()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1300, in receive
+    raise self._protocol.exception from None
+anyio.BrokenResourceError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 253, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 237, in handle_async_request
+    response = await connection.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 86, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 63, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 150, in _connect
+    stream = await stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 66, in start_tls
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc)
+httpcore.ConnectError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 183, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1533, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1620, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1648, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1685, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1722, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 352, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_updater.py", line 600, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_updater.py", line 327, in polling_action_cb
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_updater.py", line 312, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 524, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 334, in decorator
+    result = await func(*args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 3584, in get_updates
+    await self._post(
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 422, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 306, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 453, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 165, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 288, in _request_wrapper
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 274, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 204, in do_request
+    raise NetworkError(f"httpx HTTPError: {err}") from err
+telegram.error.NetworkError: httpx HTTPError: 
+2025-01-19 16:01:02,616 - ERROR - Error : check_name_list Method - Timed out
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/streams/tls.py", line 140, in _call_sslobject_method
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 859, in read
+    v = self._sslobj.read(len)
+        ^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLWantReadError: The operation did not complete (read) (_ssl.c:2559)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_core/_tasks.py", line 115, in fail_after
+    yield cancel_scope
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 34, in read
+    return await self._stream.receive(max_bytes=max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/streams/tls.py", line 204, in receive
+    data = await self._call_sslobject_method(self._ssl_object.read, max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/streams/tls.py", line 147, in _call_sslobject_method
+    data = await self.transport_stream.receive()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1289, in receive
+    await self._protocol.read_event.wait()
+  File "/usr/lib/python3.12/asyncio/locks.py", line 212, in wait
+    await fut
+  File "/usr/lib/python3.12/asyncio/futures.py", line 287, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/usr/lib/python3.12/asyncio/futures.py", line 198, in result
+    raise exc
+asyncio.exceptions.CancelledError: Cancelled by cancel scope 73a58a33e120
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 32, in read
+    with anyio.fail_after(timeout):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_core/_tasks.py", line 118, in fail_after
+    raise TimeoutError
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 253, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 237, in handle_async_request
+    response = await connection.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 90, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 112, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 91, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 155, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 191, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 31, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc)
+httpcore.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 183, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1533, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1620, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1648, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1685, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1722, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 352, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 273, in check_name_list
+    await update.message.reply_text("Here is the list of token names. Click on a token to delete it:", reply_markup=reply_markup)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_message.py", line 1006, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 2596, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 334, in decorator
+    result = await func(*args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 767, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 488, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 515, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 422, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 306, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 453, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 165, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 288, in _request_wrapper
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 274, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 200, in do_request
+    raise TimedOut from err
+telegram.error.TimedOut: Timed out
+2025-01-19 16:01:20,125 - ERROR - Error : check_name_list Method - Timed out
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_core/_tasks.py", line 115, in fail_after
+    yield cancel_scope
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 111, in connect_tcp
+    stream: anyio.abc.ByteStream = await anyio.connect_tcp(
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_core/_sockets.py", line 227, in connect_tcp
+    async with create_task_group() as tg:
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 819, in __aexit__
+    raise exc_val
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 793, in __aexit__
+    await _wait(self._tasks)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 758, in _wait
+    await waiter
+  File "/usr/lib/python3.12/asyncio/futures.py", line 287, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/usr/lib/python3.12/asyncio/futures.py", line 198, in result
+    raise exc
+asyncio.exceptions.CancelledError: Cancelled by cancel scope 73a588f71460
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 110, in connect_tcp
+    with anyio.fail_after(timeout):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_core/_tasks.py", line 118, in fail_after
+    raise TimeoutError
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 253, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 237, in handle_async_request
+    response = await connection.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 86, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 63, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 111, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/auto.py", line 29, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 109, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc)
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 183, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1533, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1620, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1648, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1685, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1722, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 352, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 273, in check_name_list
+    await update.message.reply_text("Here is the list of token names. Click on a token to delete it:", reply_markup=reply_markup)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_message.py", line 1006, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 2596, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 334, in decorator
+    result = await func(*args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 767, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 488, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 515, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 422, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 306, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 453, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 165, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 288, in _request_wrapper
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 274, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 200, in do_request
+    raise TimedOut from err
+telegram.error.TimedOut: Timed out
+2025-01-19 16:01:43,124 - ERROR - Error : check_name_list Method - Timed out
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_core/_tasks.py", line 115, in fail_after
+    yield cancel_scope
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 111, in connect_tcp
+    stream: anyio.abc.ByteStream = await anyio.connect_tcp(
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_core/_sockets.py", line 227, in connect_tcp
+    async with create_task_group() as tg:
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 819, in __aexit__
+    raise exc_val
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 793, in __aexit__
+    await _wait(self._tasks)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 758, in _wait
+    await waiter
+  File "/usr/lib/python3.12/asyncio/futures.py", line 287, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/usr/lib/python3.12/asyncio/futures.py", line 198, in result
+    raise exc
+asyncio.exceptions.CancelledError: Cancelled by cancel scope 73a58a33e330
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 110, in connect_tcp
+    with anyio.fail_after(timeout):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/anyio/_core/_tasks.py", line 118, in fail_after
+    raise TimeoutError
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 253, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 237, in handle_async_request
+    response = await connection.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 86, in handle_async_request
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 63, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 111, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/auto.py", line 29, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/backends/asyncio.py", line 109, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc)
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 183, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1533, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1620, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1648, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1685, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_client.py", line 1722, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 352, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/isha/My Git Hub Projects/Pumpfun Telegram Bot/pump-fun-tracking-telegram-bot-project/telegram_bot/bot.py", line 273, in check_name_list
+    await update.message.reply_text("Here is the list of token names. Click on a token to delete it:", reply_markup=reply_markup)
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_message.py", line 1006, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 2596, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 334, in decorator
+    result = await func(*args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 767, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 488, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 515, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 422, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 306, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/_bot.py", line 453, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 165, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 288, in _request_wrapper
+    raise exc
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 274, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isha/Documents/newTelegramBot/my_project/venv/lib/python3.12/site-packages/telegram/request/_httpxrequest.py", line 200, in do_request
+    raise TimedOut from err
+telegram.error.TimedOut: Timed out
